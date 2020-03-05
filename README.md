@@ -30,11 +30,8 @@ A loading animation will be implemented to show users of an upcoming content com
 
 #D) One component or tool of your choosing
 #Use your own experiences to design and develop a component or tool that will improve the experience of a user reading or viewing a website. Consider looking for inspirations on sites like Dribbble (or others) that demonstrate UI animations or related experience upgrades.
-#	OPTION 1: Micro interactions for linkable texts (see Code & Theory)
-#	OPTION 2: https://yalantis.com/
-	
- 
-	
+#OPTION 1: Micro interactions for linkable texts (see Code & Theory)
+#OPTION 2: https://yalantis.com/
 
 #OUR WEBSITE
 
