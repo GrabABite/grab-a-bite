@@ -13,6 +13,13 @@ body {
     background-color: var(--bg);
     font: var(--txt);
 }
+.container {
+    height: 1500px;
+    width: 100%;
+}
+header ul {
+    height:100%;
+}
 header> ul li {
     font-family: var(--fontBody);
     text-align: center;
@@ -23,4 +30,11 @@ header> ul li:first-child {
     font-size: 6em;
     text-align: center;
     padding-top: 5em;
+}
+img {
+    width: 50%;
+}
+i {
+    font-size: 36px;
+    color: var(--txt);
 }
