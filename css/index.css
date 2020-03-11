@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display|Montserrat:600i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600i&display=swap');
 
 :root {
-    --fontHead: 'Major Mono Display', monospace;
-    --fontBody: font-family: 'Montserrat', sans-serif;
+    --fontHead: 'Major Mono Display', monospace;;
+    --fontBody: 'Montserrat', sans-serif;;
     --bg: #FAF6EF;
     --txt: #232122;
     --other: #F5CA60; 
