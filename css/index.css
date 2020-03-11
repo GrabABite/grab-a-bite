@@ -2,17 +2,17 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:600i&display=swap');
 
 :root {
-    --fontHead: 'Major Mono Display', monospace;;
-    --fontBody: 'Montserrat', sans-serif;;
+    --fontHead: 'Major Mono Display', monospace;
+    --fontBody: 'Montserrat', sans-serif;
     --bg: #FAF6EF;
     --txt: #232122;
     --other: #F5CA60; 
 }
 
 body {
-    background-color: var(--bg);
+    background-color: red;
     font: var(--txt);
 }
-header {
-    font-family: var(--fontHead);
+header> ul li {
+    font-family: var(--fontBody);
 }
