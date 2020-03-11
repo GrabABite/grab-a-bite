@@ -4,15 +4,23 @@
 :root {
     --fontHead: 'Major Mono Display', monospace;
     --fontBody: 'Montserrat', sans-serif;
-    --bg: #FAF6EF;
+    --bg: rgb(250, 243, 231);
     --txt: #232122;
     --other: #F5CA60; 
 }
 
 body {
-    background-color: red;
+    background-color: var(--bg);
     font: var(--txt);
 }
 header> ul li {
     font-family: var(--fontBody);
+    text-align: center;
+    font-size: 1.5em;
+}
+header> ul li:first-child {
+    font-family: var(--fontHead);
+    font-size: 6em;
+    text-align: center;
+    padding-top: 5em;
 }
