@@ -14,48 +14,68 @@ Design a component that can guide a user though content that is split into multi
 #INSPO:
 #https://www.supremo.co.uk/ 
 
---------------------------------------------------------------------------------------
-#A&B:
-= we are combining A and B
-= making the pictures scroll horizontally with a scroll-spy
-= pictures are tabbed component, ex. if they scroll a picture it swipes left and takes you to the next picture
+#FINAL: we combined A & B, so a two in one scrollspy and carousel. The scroll-spy at the top of the page, to show the outline of the site and current page. The carousel has the flexibility to move anywhere using the scroll-spy.
+
 --------------------------------------------------------------------------------------
 
 #C) Infinitely load content
 #When a user reaches the bottom of a document, maintain the fluidity of the experience and engagement by loading new content. Ensure the user is made aware of new content (either upcoming, or already loading) and ensure a seamless, low-impact, responsible experience.
 
+<<<<<<< HEAD
 #Animation of new content entering
 #Content entering from the right side of the page (0.5 milliseconds, fading in)
 #DESIGN INSPIRATIONS: 
+=======
+#INSPO:
+>>>>>>> 389de6810fc3dacaa99367ffbee0e0b0d3a35de8
 #https://richpearson.design/
 #https://futurism.com/
 #https://dribbble.com/shots/2969291-Dribbble-Infinity-Scroll 
 #https://yalantis.com/blog/web-animation-technologies-and-tools/
 
+#FINAL: three pictures per page to indicate there's something coming up next
+
+--------------------------------------------------------------------------------------
+
 #D) One component or tool of your choosing
 #Use your own experiences to design and develop a component or tool that will improve the experience of a user reading or viewing a website. Consider looking for inspirations on sites like Dribbble (or others) that demonstrate UI animations or related experience upgrades.
-#OPTION 1: Micro interactions for linkable texts (see Code & Theory)
-#OPTION 2: https://yalantis.com/
+
+#INSPO:
+https://yalantis.com/
+
+#FINAL: viewer can comment, share and favorite images
+
+--------------------------------------------------------------------------------------
 
 #OUR WEBSITE
-
 #NAME: Grab A BIte
 #ABOUT: Eggs Benedict
-#CONTENT: Different types of egg Benedicts	https://en.wikipedia.org/wiki/Eggs_Benedict
+#CONTENT: Different types of egg Benedicts	
+
+--------------------------------------------------------------------------------------
 
 #COLOUR PALETTE: 
-#Simple
+  #FAF3E7 - WHITE
+  #F5CA60 - YELLOW
+  #232122 - BLACK
+
+--------------------------------------------------------------------------------------
 
 #PLANNING:
-- first page: 
-= grab a bite (brand name)
-= when clicked on it the name flips and shows a quote about the brand
-= next click would make the first page swipe up and transition to next
+  # first page: 
+  = grab a bite (brand name)
+  = click the bottom arrow 
+  = transiotion slide up to second page
 
-- later pages:
-= picture with text content (name, ingredients, calories, a link maybe)
-= this page is the start of the gallery
-= first picture intro to benedict
-= next pictures -> on the right side there will be an arrow and once clicked
-= it shows all the text content
-	
+  # second page:
+  = egg benedict definition
+  = when it is scrolled down it flips the page to the gallery (transition)
+
+  # later pages:
+  = carousel component of three picture per page
+  = main focus on the middle one
+  = scroll spy at the top of the page 
+  = picture with an arrow down at the bottom of the page
+  = once arrow clicked, info shows up (name, ingredients, heart, comment and share)
+  = the picture zoom out
+

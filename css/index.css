@@ -18,6 +18,11 @@ body {
     width: 100%;
 }
 header ul {
+    height:100%;
+    transition: transform 0.3s;
+}
+.flip {
+    transform: scaleY(-1);
     margin: 10em 0;
 }
 header> ul li {
