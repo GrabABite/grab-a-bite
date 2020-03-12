@@ -42,9 +42,9 @@ https://yalantis.com/
 --------------------------------------------------------------------------------------
 
 #OUR WEBSITE
-  ##NAME: Grab A BIte
-  ##ABOUT: Eggs Benedict
-  ##CONTENT: Different types of egg Benedicts	
+  #NAME: Grab A BIte
+  #ABOUT: Eggs Benedict
+  #CONTENT: Different types of egg Benedicts	
 
 --------------------------------------------------------------------------------------
 
