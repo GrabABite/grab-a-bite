@@ -6,11 +6,11 @@
     --fontBody: 'Abel', sans-serif;
     --bg: rgb(250, 243, 231);
     --txt: #232122;
-    --other: #F5CA60; 
+    --bg2: #F5CA60; 
 }
 
 body {
-    background-color: var(--other);
+    background-color: var(--bg2);
     font: var(--txt);
 }
 .container {
@@ -44,4 +44,3 @@ i {
     background-color: var(--bg);
     position: absolute;
     z-index: 20%;
-}
