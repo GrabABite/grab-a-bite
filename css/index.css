@@ -20,6 +20,10 @@ body {
 }
 header ul {
     height:100%;
+    transition: transform 0.3s;
+}
+.flip {
+    transform: scaleY(-1);
 }
 header> ul li {
     font-family: var(--fontBody);
@@ -44,3 +48,4 @@ i {
     background-color: var(--bg);
     position: absolute;
     z-index: 20%;
+}
