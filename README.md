@@ -42,20 +42,27 @@ https://yalantis.com/
 --------------------------------------------------------------------------------------
 
 #OUR WEBSITE
+
 #NAME: Grab A BIte
+
 #ABOUT: Eggs Benedict
+
 #CONTENT: Different types of egg Benedicts	
 
 --------------------------------------------------------------------------------------
 
 #COLOUR PALETTE: 
+
 #FAF3E7 - WHITE
+
 #F5CA60 - YELLOW
+
 #232122 - BLACK
 
 --------------------------------------------------------------------------------------
 
 #PLANNING:
+
 #first page: 
 #grab a bite (brand name)
 #click the bottom arrow 
