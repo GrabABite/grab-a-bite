@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:600i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Leckerli+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
 
 :root {
-    --fontHead: 'Major Mono Display', monospace;
-    --fontBody: 'Montserrat', sans-serif;
+    --fontHead: 'Leckerli One', cursive;;
+    --fontBody: 'Abel', sans-serif;
     --bg: rgb(250, 243, 231);
     --txt: #232122;
     --other: #F5CA60; 
@@ -25,6 +25,7 @@ header> ul li {
     font-family: var(--fontBody);
     text-align: center;
     font-size: 1.5em;
+    padding: 0.3em;
 }
 header> ul li:first-child {
     font-family: var(--fontHead);
