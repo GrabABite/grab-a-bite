@@ -21,17 +21,11 @@ Design a component that can guide a user though content that is split into multi
 #C) Infinitely load content
 #When a user reaches the bottom of a document, maintain the fluidity of the experience and engagement by loading new content. Ensure the user is made aware of new content (either upcoming, or already loading) and ensure a seamless, low-impact, responsible experience.
 
-<<<<<<< HEAD
-#Animation of new content entering
-#Content entering from the right side of the page (0.5 milliseconds, fading in)
-#DESIGN INSPIRATIONS: 
-=======
 #INSPO:
->>>>>>> 389de6810fc3dacaa99367ffbee0e0b0d3a35de8
-#https://richpearson.design/
-#https://futurism.com/
-#https://dribbble.com/shots/2969291-Dribbble-Infinity-Scroll 
-#https://yalantis.com/blog/web-animation-technologies-and-tools/
+https://richpearson.design/
+https://futurism.com/
+https://dribbble.com/shots/2969291-Dribbble-Infinity-Scroll 
+https://yalantis.com/blog/web-animation-technologies-and-tools/
 
 #FINAL: three pictures per page to indicate there's something coming up next
 
@@ -48,34 +42,34 @@ https://yalantis.com/
 --------------------------------------------------------------------------------------
 
 #OUR WEBSITE
-#NAME: Grab A BIte
-#ABOUT: Eggs Benedict
-#CONTENT: Different types of egg Benedicts	
+  ##NAME: Grab A BIte
+  ##ABOUT: Eggs Benedict
+  ##CONTENT: Different types of egg Benedicts	
 
 --------------------------------------------------------------------------------------
 
 #COLOUR PALETTE: 
-  #FAF3E7 - WHITE
-  #F5CA60 - YELLOW
-  #232122 - BLACK
+  ##FAF3E7 - WHITE
+  ##F5CA60 - YELLOW
+  ##232122 - BLACK
 
 --------------------------------------------------------------------------------------
 
 #PLANNING:
   # first page: 
-  = grab a bite (brand name)
-  = click the bottom arrow 
-  = transiotion slide up to second page
+  ## grab a bite (brand name)
+  ## click the bottom arrow 
+  ## transiotion slide up to second page
 
   # second page:
-  = egg benedict definition
-  = when it is scrolled down it flips the page to the gallery (transition)
+  ## egg benedict definition
+  ## when it is scrolled down it flips the page to the gallery (transition)
 
   # later pages:
-  = carousel component of three picture per page
-  = main focus on the middle one
-  = scroll spy at the top of the page 
-  = picture with an arrow down at the bottom of the page
-  = once arrow clicked, info shows up (name, ingredients, heart, comment and share)
-  = the picture zoom out
+  ## carousel component of three picture per page
+  ## main focus on the middle one
+  ## scroll spy at the top of the page 
+  ## picture with an arrow down at the bottom of the page
+  ## once arrow clicked, info shows up (name, ingredients, heart, comment and share)
+  ## the picture zoom out
 
