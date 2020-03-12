@@ -42,34 +42,34 @@ https://yalantis.com/
 --------------------------------------------------------------------------------------
 
 #OUR WEBSITE
-  #NAME: Grab A BIte
-  #ABOUT: Eggs Benedict
-  #CONTENT: Different types of egg Benedicts	
+#NAME: Grab A BIte
+#ABOUT: Eggs Benedict
+#CONTENT: Different types of egg Benedicts	
 
 --------------------------------------------------------------------------------------
 
 #COLOUR PALETTE: 
-  ##FAF3E7 - WHITE
-  ##F5CA60 - YELLOW
-  ##232122 - BLACK
+#FAF3E7 - WHITE
+#F5CA60 - YELLOW
+#232122 - BLACK
 
 --------------------------------------------------------------------------------------
 
 #PLANNING:
-  # first page: 
-  ## grab a bite (brand name)
-  ## click the bottom arrow 
-  ## transiotion slide up to second page
+#first page: 
+#grab a bite (brand name)
+#click the bottom arrow 
+#transiotion slide up to second page
 
-  # second page:
-  ## egg benedict definition
-  ## when it is scrolled down it flips the page to the gallery (transition)
+#second page:
+#egg benedict definition
+#when it is scrolled down it flips the page to the gallery (transition)
 
-  # later pages:
-  ## carousel component of three picture per page
-  ## main focus on the middle one
-  ## scroll spy at the top of the page 
-  ## picture with an arrow down at the bottom of the page
-  ## once arrow clicked, info shows up (name, ingredients, heart, comment and share)
-  ## the picture zoom out
+#later pages:
+#carousel component of three picture per page
+#main focus on the middle one
+#scroll spy at the top of the page 
+#picture with an arrow down at the bottom of the page
+#once arrow clicked, info shows up (name, ingredients, heart, comment and share)
+#the picture zoom out
 
