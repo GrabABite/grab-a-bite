@@ -24,9 +24,6 @@ Design a component that can guide a user though content that is split into multi
 #C) Infinitely load content
 #When a user reaches the bottom of a document, maintain the fluidity of the experience and engagement by loading new content. Ensure the user is made aware of new content (either upcoming, or already loading) and ensure a seamless, low-impact, responsible experience.
 
-#Loading Animation
-A loading animation will be implemented to show users of an upcoming content coming their way. (seamless gif; design accordance to the brand)
- 
 #Animation of new content entering
 #Content entering from the right side of the page (0.5 milliseconds, fading in)
 #DESIGN INSPIRATIONS: 
