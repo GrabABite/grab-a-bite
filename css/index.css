@@ -24,6 +24,7 @@ header ul {
 }
 .flip {
     transform: scaleY(-1);
+    margin: 10em 0;
 }
 header> ul li {
     font-family: var(--fontBody);
