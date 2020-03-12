@@ -19,7 +19,7 @@ body {
     position: relative;
 }
 header ul {
-    height:100%;
+    margin: 10em 0;
 }
 header> ul li {
     font-family: var(--fontBody);
@@ -44,3 +44,4 @@ i {
     background-color: var(--bg);
     position: absolute;
     z-index: 20%;
+}
