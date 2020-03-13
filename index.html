@@ -43,22 +43,24 @@
                         <h1>Name of this Benny</h1>
                         <a href="#"><i class="material-icons" id="fave">favorite_border</i></a>
                     </div>
-
                     <div class="informations" id="info">
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur expedita sequi aliquid error eveniet maxime doloribus ratione qui quod, et facilis fugiat dolore veritatis nihil doloremque praesentium! Architecto, illo porro?</p>
                     </div>
 
-                    <div class="comment" id="comments">
+                    <div class="comment" id="comment">
                         <form>
                             <label for="comment"></label>
-                            <textarea class="comments" name="comments" id="comments"></textarea>
+                            <textarea class="comments" placeholder="Let us know what you think!" name="comments" id="comments"></textarea>
                         </form>
-                        <button> COMMENT </button>
+                        <button class="addComment" id="addComment"> COMMENT </button>
                     </div>
 
                     <div class="shareThis" id="shareThis">
-                        <!-- FB, INSTA, TWITTER -->
-
+                        <ul>
+                           <li><a href="https://www.facebook.com/login"><img src="img/facebook.svg"></a></li>
+                           <li><a href="https://www.instagram.com/accounts/login/?hl=en"><img src="img/instagram.svg"></a></li>
+                           <li><a href="https://twitter.com/login"><img src="img/twitter.svg"></a><li>
+                        </ul>
                     </div>
                 </section> 
             </article>
@@ -68,8 +70,8 @@
 
     <footer class="siteFooter" id="siteFooter">
         <section class="subscribe" id="subscribe">
-            <input placeholder="Get into our mailing list!" type="text"></input>
-            <button class="subscribeBtn">Subscribe</button>
+            <input placeholder="Let's be friends!" type="email"></input>
+            <button class="subscribeBtn">SUBSCRIBE</button>
         </section>
 
         <section class="socMed" id="socMed">
@@ -87,8 +89,6 @@
                 <li><a href="#">Accessibility Policy</a></li>
             </ul>
         </section>
-
-       
     </footer>
 
     <script src="/js/index.js"></script>
