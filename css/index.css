@@ -102,9 +102,11 @@ footer {
     background-color: var(--bg2);
     text-align: center;
     color: var(--txt);
+    padding-top: 3em;
 }
 .subscribe {
     padding: 1em;
+    padding-top: 3em;
 }
 .subscribe> input {
     width: 15%;
