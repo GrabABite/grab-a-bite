@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
 
 :root {
-    --fontHead: 'Leckerli One', cursive;;
+    --fontHead: 'Leckerli One', cursive;
     --fontBody: 'Abel', sans-serif;
     --bg: #faf3e7;
     --txt: #232122;
@@ -13,38 +13,137 @@ body {
     background-color: var(--bg2);
     font: var(--txt);
 }
+
+h1 {
+    font-family: var(--fontHead);
+    font-size: 6em;
+    text-align: center;
+    padding: 4em;
+}
+
+
+img {
+    width: 65%;
+}
+
 .container {
     height: 1200px;
     width: 100%;
 }
-header ul {
+
+.intro_pg{
     height:100%;
     transition: transform 0.3s;
 }
-.flip {
+
+/* .egg_pg {
     transform: scaleY(-1);
     margin: 10em 0;
-}
-header> ul li {
+} */
+
+.tag_line{
     font-family: var(--fontBody);
     text-align: center;
     font-size: 1.5em;
     padding: 0.3em;
 }
-header> ul li:first-child {
-    font-family: var(--fontHead);
-    font-size: 6em;
-    text-align: center;
-    padding-top: 4em;
-}
-img {
-    width: 50%;
 
-}
-i {
-    font-size: 36px;
+.material-icons {
+    font-size: 22px;
     color: var(--txt);
+    padding: 8px 12px;
+  
+    
 }
-.bennies {
+
+/* .bennies {
     background-color: var(--bg);
+} */
+
+.dot{
+    /* cursor: pointer; */
+    height: 15px;
+    width: 15px;
+    /* margin: 0 2px; */
+    background-color: lightgray;
+    box-shadow: black;
+    border-radius: 50%;
+    display: inline-block;
+    transform: rotate(90deg);
+    /* transition: background-color 0.6s ease; */
+}
+
+.share{
+    padding-top: 1em;
+    /* padding: 2px; */
+    padding-bottom: 0em;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.benny_pic{
+    display: flex;
+    padding: 2em;
+    background-color: var(--bg);
+    
+}
+
+.first{
+    padding:2em;
+}
+.second{
+    padding:2em;
+}
+.third{
+    padding:2em;
+}
+.fourth{
+    padding:2em;
+}
+.fifth{
+    padding:2em;
+}
+.sixth{
+    padding:2em;
+    
+}
+.seventh{
+    padding:2em;
+    
+}
+.eighth{
+    padding:2em;
+    
+}
+.ninth{
+    padding:2em;
+    
+}
+.tenth{
+    padding:2em;
+    
+}
+.eleventh{
+    padding:2em;
+}
+.twelfth{
+    padding:2em;
+    
+}
+
+.description{
+    font-family: var(--fontBody);
+    font-size: 1.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.comment{
+    font-family: var(--fontBody);
+    font-size: 1.5em;
 }
