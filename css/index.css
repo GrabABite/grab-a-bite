@@ -22,7 +22,7 @@ i {
     color: var(--txt);
 }
 textarea {
-    width: 300px;
+    width: 350px;
     height: 150px;
 }
 button {
@@ -113,9 +113,21 @@ main> section> .intro ul li {
 
 
 
-/* comments */
+/* comments and share section */
 .comment {
+    padding-top: 5em;
     text-align: center;
+}
+.shareThis {
+    text-align: center;
+    padding-top: 3em;;
+}
+.shareThis ul li {
+    padding: 1em;
+    display: inline-block;
+}
+.shareThis ul li> a img {
+    width: 50px;
 }
 
 /* footer */
@@ -168,4 +180,7 @@ a:hover {
     text-decoration: underline;
     color: var(--bg3);
 }
+/* .shareThis ul li> a img:hover {
+    transform: rotate(360deg);
+} */
 
