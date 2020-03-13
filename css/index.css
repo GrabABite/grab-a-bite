@@ -7,59 +7,115 @@
     --bg: #faf3e7;
     --txt: #232122;
     --bg2: #F5CA60; 
+    --bg3: #f3deba;
 }
 
+/* general */
 body {
     background-color: var(--bg2);
-    font: var(--txt);
+    color: var(--txt);
 }
-
-h1 {
-    font-family: var(--fontHead);
-    font-size: 6em;
-    text-align: center;
-    padding: 4em;
-}
-
-
 img {
     width: 65%;
 }
-
-.container {
-    height: 1200px;
-    width: 100%;
+textarea {
+    width: 350px;
+    height: 150px;
+    font-family: var(--fontBody);
+    font-size: 1em;
+}
+button {
+    font-weight: bold;
+    padding:0.7em;
+    border-radius: 10%;
+    font-family: var(--fontBody);
+}
+input {
+    font-family: var(--fontBody);
+}
+i {
+    font-size: 22px;
+    color: var(--txt);
+    padding: 8px 12px;
 }
 
-.intro_pg{
-    height:100%;
+/* landing pg */
+header {
+    position: relative;
+    padding-top: 0px;
+    margin-top: 0px;
+    display: block;
+    height: 100vh;
+}
+header ul {
     transition: transform 0.3s;
 }
-
-/* .egg_pg {
-    transform: scaleY(-1);
-    margin: 10em 0;
-} */
-
-.tag_line{
+header> ul li {
     font-family: var(--fontBody);
     text-align: center;
     font-size: 1.5em;
     padding: 0.3em;
 }
-
-.material-icons {
-    font-size: 22px;
-    color: var(--txt);
-    padding: 8px 12px;
-  
-    
+header> ul li:first-child {
+    font-family: var(--fontHead);
+    font-size: 6em;
+    text-align: center;
+    padding-top:4em;
+}
+header> ul li:nth-child(3) {
+    position: absolute;
+    top: 90%;
+    left: 50%;
 }
 
-/* .bennies {
+/* bennies */
+main {
     background-color: var(--bg);
+}
+main h1{
+    font-family: var(--fontHead);
+    font-size: 3.5em;
+}
+main p {
+    font-family: var(--fontBody);
+    font-size: 1.5em;
+}
+main> section> .intro {
+    position: relative;
+}
+main> section> .intro ul{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+main> section> .intro ul li {
+    padding:1em;
+}
+.flipper {
+    padding-bottom: 5em;
+}
+.intro {
+    position: fixed;
+    text-align: center;
+    padding-top: 0px;
+    margin-top: 0px;
+    display: block;
+    height: 100vh;
+}
+/* .egg_pg {
+    transform: scaleY(-1);
+    margin: 10em 0;
 } */
 
+/* .tag_line{ */
+    /* font-family: var(--fontBody);
+    text-align: center;
+    font-size: 1.5em;
+    padding: 0.3em;
+} */
+
+/* the foods/ ourBennies section */
 .dot{
     /* cursor: pointer; */
     height: 15px;
@@ -71,18 +127,6 @@ img {
     display: inline-block;
     transform: rotate(90deg);
     /* transition: background-color 0.6s ease; */
-}
-
-.share{
-    padding-top: 1em;
-    /* padding: 2px; */
-    padding-bottom: 0em;
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
 }
 
 
@@ -136,14 +180,81 @@ img {
     
 }
 
-.description{
+.description p{
     font-family: var(--fontBody);
-    font-size: 1.5em;
+    font-size: 1em;
     padding-top: 1em;
     padding-bottom: 1em;
 }
 
-.comment{
-    font-family: var(--fontBody);
-    font-size: 1.5em;
+/* comments and share section */
+.comment {
+    padding-top: 5em;
+    text-align: center;
 }
+.shareThis {
+    text-align: center;
+    padding-top: 3em;;
+}
+.shareThis ul li {
+    padding: 1em;
+    display: inline-block;
+}
+.shareThis ul li> a img {
+    width: 50px;
+}
+
+/* footer */
+
+footer {
+    background-color: var(--bg2);
+    text-align: center;
+    color: var(--txt);
+    padding-top: 3em;
+}
+.subscribe {
+    padding: 1em;
+    padding-top: 3em;
+}
+.subscribe> input {
+    width: 15%;
+    padding:0.7em;
+    border-radius: 10%;
+}
+.socMed> ul> li {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+}
+.socMed> ul> li {
+    padding: 2em;
+}
+.siteTerms> ul> li {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    padding: 2em;
+}
+.siteTerms> ul>li a {
+    color: var(--txt);
+    font-family: var(--fontBody);
+    font-weight: bold;
+}
+
+
+/* HOVERABLE MENTIONS and OTHERS;) */
+button:hover {
+    background-color: var(--bg3);
+}
+a:link {
+    text-decoration: none;
+    color: var(--txt);
+} 
+a:hover {
+    text-decoration: underline;
+    color: var(--bg3);
+}
+
+/* .shareThis ul li> a img:hover {
+    transform: rotate(360deg);
+} */
