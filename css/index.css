@@ -2,28 +2,35 @@
 @import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
 
 :root {
-    --fontHead: 'Leckerli One', cursive;;
+    --fontHead: 'Leckerli One', cursive;
     --fontBody: 'Abel', sans-serif;
     --bg: #faf3e7;
     --txt: #232122;
     --bg2: #F5CA60; 
 }
 
+/* general */
 body {
     background-color: var(--bg2);
-    font: var(--txt);
+    color: var(--txt);
 }
-.container {
-    height: 1200px;
-    width: 100%;
+img {
+    width: 50%;
+}
+i {
+    color: var(--txt);
+}
+
+/* landing page */
+header {
+    position: relative;
+    padding-top: 0px;
+    margin-top: 0px;
+    display: block;
+    height: 100vh;
 }
 header ul {
-    height:100%;
     transition: transform 0.3s;
-}
-.flip {
-    transform: scaleY(-1);
-    margin: 10em 0;
 }
 header> ul li {
     font-family: var(--fontBody);
@@ -37,14 +44,92 @@ header> ul li:first-child {
     text-align: center;
     padding-top: 4em;
 }
-img {
-    width: 50%;
-
+header> ul li:nth-child(3) {
+    position: absolute;
+    top: 90%;
+    left: 50%;
 }
-i {
-    font-size: 36px;
+
+/* intro to bennies */
+main {
+    background-color: var(--bg);
+}
+main h1{
+    font-family: var(--fontHead);
+    font-size: 3.5em;
+}
+main p {
+    font-family: var(--fontBody);
+    font-size: 1.5em;
+}
+main> section> .intro {
+    position: relative;
+}
+main> section> .intro ul{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+main> section> .intro ul li {
+    padding:1em;
+}
+/* .flipper {
+    transform: scaleY(-1);
+    margin: 10em 0;
+} */
+
+.intro {
+    position: fixed;
+    text-align: center;
+    padding-top: 0px;
+    margin-top: 0px;
+    display: block;
+    height: 100vh;
+}
+
+/* the foods/ ourBennies section */
+
+
+
+
+
+
+/* footer */
+
+footer {
+    background-color: var(--bg2);
+    text-align: center;
     color: var(--txt);
 }
-.bennies {
-    background-color: var(--bg);
+.subscribe {
+    padding: 1em;
+}
+.subscribe> input {
+    width: 15%;
+}
+.subscribe> input, .subscribeBtn {
+    padding:0.5em;
+    border-radius: 10%;
+    font-family: var(--fontBody);
+}
+.socMed> ul> li {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+}
+.socMed> ul> li {
+    margin: 2em;
+}
+.siteTerms> ul> li {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    padding: 2em;
+}
+.siteTerms> ul>li a {
+    color: var(--txt);
+    font-family: var(--fontBody);
+    text-decoration: none;
+    font-weight: bold;
 }

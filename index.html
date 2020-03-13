@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <section class="container" id="">
+    <section class="welcome" id="welcome">
         <header>
             <ul>
                 <li>grab a bite</li>
@@ -23,33 +23,73 @@
         </header>
     </section>
 
-    <main class="bennies">
+    <main class="bennies"> 
         <section class="flipper" id="flipper">
             <article class="intro" id="bennyIntro">
-                <p>Eggs Benedict </p>
-                <p>\'āg be-nə-ˌdikt'\</p><p>Eggs Benedict is an American breakfast or brunch dish, consisting of an open-faced sandwich of two halves of an English muffin topped with a poached egg and hollandaise sauce. The dish was popularized in New York City.</p>
+                <ul>
+                    <li><h1>Eggs Benedict </h1></li>
+                    <li><p>\'āg be-nə-ˌdikt'\</p></li>
+                    <li><p>Eggs Benedict, an American brunch staple, consisting of an open-faced sandwich of </p></li> 
+                    <li><p>two halves of an English muffin topped with a poached egg and hollandaise sauce.</p></li>
+                    <li><p>Hollandaise is a rich and creamy concoction made with egg yolks, butter, lemon juice or vinegar, and various seasonings. </p></li>
+                    <li><p>Eggs bennies were popularized in New York City, 1881.</p></li>
+                </ul>
             </article>
 
             <article class="ourBennies" id="ourBennies">
-                <section class="firstBenny" class="firstBenny">
+                <section class="ohBenny" id="ohBenny">
                     <img src="img/EB1.jpg" alt="Egg B1">
                     <div class="nameHeart" id="nameHeart">
-                        <p>Name of this Benny</p>
+                        <h1>Name of this Benny</h1>
                         <a href="#"><i class="material-icons" id="fave">favorite_border</i></a>
                     </div>
-                    <div>
+
+                    <div class="informations" id="info">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur expedita sequi aliquid error eveniet maxime doloribus ratione qui quod, et facilis fugiat dolore veritatis nihil doloremque praesentium! Architecto, illo porro?</p>
+                    </div>
+
+                    <div class="comment" id="comments">
+                        <form>
+                            <label for="comment"></label>
+                            <textarea class="comments" name="comments" id="comments"></textarea>
+                        </form>
+                        <button> COMMENT </button>
+                    </div>
+
+                    <div class="shareThis" id="shareThis">
+                        <!-- FB, INSTA, TWITTER -->
 
                     </div>
-                
                 </section> 
             </article>
-        </section>   
+        </section>
+
     </main>    
 
+    <footer class="siteFooter" id="siteFooter">
+        <section class="subscribe" id="subscribe">
+            <input placeholder="Get into our mailing list!" type="text"></input>
+            <button class="subscribeBtn">Subscribe</button>
+        </section>
 
+        <section class="socMed" id="socMed">
+            <ul>
+                <li><a href="https://www.facebook.com/login"><img src="https://img.icons8.com/wired/96/000000/facebook.png"></a></li>
+                <li><a href="https://www.instagram.com/accounts/login/?hl=en"><img src="https://img.icons8.com/wired/96/000000/instagram-new.png"></a></li>
+                <li><a href="https://twitter.com/login"><img src="https://img.icons8.com/wired/96/000000/twitter.png"></a></li>
+            </ul>
+        </section>
 
+        <section class="siteTerms" id="siteTerms">
+            <ul>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Accessibility Policy</a></li>
+            </ul>
+        </section>
 
-
+       
+    </footer>
 
     <script src="/js/index.js"></script>
 </body>
