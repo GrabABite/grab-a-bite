@@ -80,3 +80,18 @@ https://yalantis.com/
 #once arrow clicked, info shows up (name, ingredients, heart, comment and share)
 #the picture zoom out
 
+#MORE TO BE DONE FOR CSS
+#1. THE FLIP
+
+#2. FIXING THE BENNY_PICS. 
+    #A. DROPDOWN FOR THE DETAIL BUTTONS
+    #B. SIZE MAKE THEM LOOK THEY ARE ON A GRID
+
+#FOR JAVASCRIPT
+#1. Script for the 1st pg/section jumping to the next one. Tied to this /<i class="material-icons" id="drop">arrow_drop_down_circle</i>/
+
+#2. The <div class="scrollspy"> Script for the scrollspy
+
+#3. The carouseL
+
+#4. 
