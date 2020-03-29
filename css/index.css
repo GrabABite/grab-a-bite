@@ -16,7 +16,7 @@ body {
     color: var(--txt);
 }
 img {
-    width: 65%;
+    width: 40%;
 }
 textarea {
     width: 350px;
@@ -68,13 +68,43 @@ header> ul li:nth-child(3) {
     left: 50%;
 }
 
+/* flippers */
+/*.bennies {
+    perspective: 800px;
+}
+.bennies:hover .flipper {
+    transform: rotateY(180deg);
+}
+.intro {
+    z-index: 3em;
+}
+.intro .benny_pic {
+    position: absolute;
+    backface-visibility: hidden;
+}
+ .vertical.bennies {
+	position: relative;
+}
+
+	.vertical .benny_pic {
+		transform: rotateX(180deg);
+	}
+
+	.vertical.bennies .flipper {
+		transform-origin: 100% 213.5px; /* half of height 
+	}
+
+	.vertical.bennies:hover .flipper {
+		transform: rotateX(-180deg);
+	} */
+
 /* bennies */
 main {
     background-color: var(--bg);
 }
 main h1{
     font-family: var(--fontHead);
-    font-size: 3.5em;
+    font-size: 2em;
 }
 main p {
     font-family: var(--fontBody);
@@ -92,9 +122,6 @@ main> section> .intro ul{
 main> section> .intro ul li {
     padding:1em;
 }
-.flipper {
-    padding-bottom: 5em;
-}
 .intro {
     position: fixed;
     text-align: center;
@@ -108,12 +135,6 @@ main> section> .intro ul li {
     margin: 10em 0;
 } */
 
-/* .tag_line{ */
-    /* font-family: var(--fontBody);
-    text-align: center;
-    font-size: 1.5em;
-    padding: 0.3em;
-} */
 
 /* the foods/ ourBennies section */
 .dot{
@@ -128,15 +149,15 @@ main> section> .intro ul li {
     transform: rotate(90deg);
     /* transition: background-color 0.6s ease; */
 }
-
-
 .benny_pic{
-    display: flex;
-    padding: 2em;
-    background-color: var(--bg);
+    background-color: var(--bg2);
+    text-align: center;
+    display: grid;
+    grid-auto-rows: 100vh;
+    grid-gap: 1.5em;
+    margin: 2em 0 2em;
     
 }
-
 .first{
     padding:2em;
 }
@@ -151,6 +172,7 @@ main> section> .intro ul li {
 }
 .fifth{
     padding:2em;
+
 }
 .sixth{
     padding:2em;
@@ -158,7 +180,6 @@ main> section> .intro ul li {
 }
 .seventh{
     padding:2em;
-    
 }
 .eighth{
     padding:2em;
@@ -166,20 +187,21 @@ main> section> .intro ul li {
 }
 .ninth{
     padding:2em;
-    
 }
 .tenth{
     padding:2em;
-    
 }
 .eleventh{
     padding:2em;
 }
 .twelfth{
     padding:2em;
-    
 }
 
+.nameHeart {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr ;
+} 
 .description p{
     font-family: var(--fontBody);
     font-size: 1em;
