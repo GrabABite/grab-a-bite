@@ -16,7 +16,7 @@ body {
     color: var(--txt);
 }
 img {
-    width: 40%;
+    width: 100%;
 }
 textarea {
     width: 350px;
@@ -153,46 +153,22 @@ main> section> .intro ul li {
     background-color: var(--bg2);
     text-align: center;
     display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-areas:
+    "a b 0";
+}
+.ben {
+    display: grid;
     grid-auto-rows: 100vh;
-    grid-gap: 1em;
+    grid-gap: 2em;
+}
+.scrollspy {
+    grid-area: a;
+}
+.ben {
+    grid-area: b;
 }
 .first{
-    padding:2em;
-}
-.second{
-    padding:2em;
-}
-.third{
-    padding:2em;
-}
-.fourth{
-    padding:2em;
-}
-.fifth{
-    padding:2em;
-
-}
-.sixth{
-    padding:2em;
-    
-}
-.seventh{
-    padding:2em;
-}
-.eighth{
-    padding:2em;
-    
-}
-.ninth{
-    padding:2em;
-}
-.tenth{
-    padding:2em;
-}
-.eleventh{
-    padding:2em;
-}
-.twelfth{
     padding:2em;
 }
 
