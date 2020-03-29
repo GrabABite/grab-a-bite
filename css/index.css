@@ -154,9 +154,7 @@ main> section> .intro ul li {
     text-align: center;
     display: grid;
     grid-auto-rows: 100vh;
-    grid-gap: 1.5em;
-    margin: 2em 0 2em;
-    
+    grid-gap: 1em;
 }
 .first{
     padding:2em;
