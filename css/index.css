@@ -16,7 +16,7 @@ body {
     color: var(--txt);
 }
 img {
-    width: 100%;
+    width: 95%;
 }
 textarea {
     width: 350px;
@@ -123,7 +123,6 @@ main> section> .intro ul li {
     padding:1em;
 }
 .intro {
-    position: fixed;
     text-align: center;
     padding-top: 0px;
     margin-top: 0px;
@@ -157,6 +156,9 @@ main> section> .intro ul li {
     grid-template-areas:
     "a b 0";
 }
+.benny {
+    place-self: center;
+}
 .ben {
     display: grid;
     grid-auto-rows: 100vh;
@@ -167,11 +169,13 @@ main> section> .intro ul li {
 }
 .ben {
     grid-area: b;
+    padding-top: 1em;
 }
 .first{
+    display: grid;
     padding:2em;
+    place-self: center center;
 }
-
 .nameHeart {
     display: grid;
     grid-template-columns: 1fr 0.5fr ;

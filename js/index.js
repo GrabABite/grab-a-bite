@@ -1,1 +1,0 @@
-window.addEventListener('scroll',(event) => {console.log(window.scrollY)})
