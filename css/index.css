@@ -166,18 +166,25 @@ i {
     display: grid;
     grid-auto-rows: 100vh;
     grid-gap: 2em;
-}
-.scrollspy {
-    grid-area: a;
-}
-.ben {
     grid-area: b;
     padding-top: 1em;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;   
 }
-.first{
+.ben::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+.ben> .first {
     display: grid;
     padding:2em;
-    place-self: center center;
+    text-align: center;
+    scroll-snap-align: start;
+    height: 100vh;
+}
+
+.scrollspy {
+    grid-area: a;
 }
 .nameHeart {
     display: grid;
