@@ -16,7 +16,7 @@ body {
     color: var(--txt);
 }
 img {
-    width: 95%;
+    width: 69vh;
 }
 textarea {
     width: 350px;
@@ -155,7 +155,7 @@ i {
     background-color: var(--bg2);
     text-align: center;
     display: grid;
-    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
     grid-template-areas:
     "a b 0";
 }
@@ -173,7 +173,7 @@ i {
     height: 100vh;   
 }
 .ben::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
+    display: none;  
 }
 .ben> .first {
     display: grid;
@@ -188,13 +188,19 @@ i {
 }
 .nameHeart {
     display: grid;
-    grid-template-columns: 1fr 0.5fr ;
+    grid-template-columns: 1.5fr 0.5fr ;
 } 
+.nameHeart> h1, a {
+    place-self: center;
+}
+.nameHeart> a {
+    justify-self: left;
+}
+
 .description p{
     font-family: var(--fontBody);
-    font-size: 1em;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    font-size: 1.5em;
+    padding: 1em 5em 1em 5em;
 }
 
 /* comments and share section */
