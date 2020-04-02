@@ -15,9 +15,6 @@ body {
     background-color: var(--bg2);
     color: var(--txt);
 }
-img {
-    width: 69vh;
-}
 textarea {
     width: 350px;
     height: 150px;
@@ -161,6 +158,7 @@ i {
 }
 .benny {
     place-self: center;
+    width: 69vh;
 }
 .ben {
     display: grid;
@@ -190,7 +188,7 @@ i {
     display: grid;
     grid-template-columns: 1.5fr 0.5fr ;
 } 
-.nameHeart> h1, a {
+.nameHeart> h1 {
     place-self: center;
 }
 .nameHeart> a {
