@@ -52,7 +52,7 @@ i {
     font-family: var(--fontHead);
     font-size: 6em;
     text-align: center;
-    padding-top:4em;
+    padding-top:3em;
 }
 .startPg> ul li:nth-child(3) {
     position: absolute;
@@ -215,18 +215,15 @@ i {
     border-radius: 10%;
     font-family: var(--fontBody);
 }
-.commList > .commentList {
-    list-style: none;
-    text-align: center;
+.commList ul {
     list-style: none;
 }
-.commList > ul li {
+.commList ul li {
     background-color: var(--bg3);
-    text-align: center;
-    margin: 20px;
-    overflow: auto;
-    padding: 10px;
+    border radius: 10%;
+    font-family: var(--fontBody);
 }
+
 .shareThis {
     text-align: center;
     padding-top: 3em;;
@@ -239,10 +236,6 @@ i {
     width: 50px;
 }
 
-
-ul {
-    list-style: none;
-  }
 
 
 
