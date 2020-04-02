@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Leckerli+One&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
 
+html, body, main{
+    height: 100%;
+}
 :root {
     --fontHead: 'Leckerli One', cursive;
     --fontBody: 'Abel', sans-serif;
@@ -20,7 +23,7 @@ img {
 }
 textarea {
     width: 350px;
-    height: 150px;
+    height: 80px;
     font-family: var(--fontBody);
     font-size: 1em;
 }
@@ -33,11 +36,17 @@ button {
 input {
     font-family: var(--fontBody);
 }
-i {
-    font-size: 22px;
+ i {
+    /* font-size: 10px; */
     color: var(--txt);
-    padding: 8px 12px;
+    float: right;
 }
+
+.material-icons{
+   margin-right: 7em;
+}
+
+
 
 /* landing pg */
 header {
@@ -136,77 +145,119 @@ main> section> .intro ul li {
 
 
 /* the foods/ ourBennies section */
+
+.scrollspy {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    /* padding-left: 37.5em; */
+    cursor: pointer;
+    /* text-align: center;    */
+}
+
 .dot{
     /* cursor: pointer; */
-    height: 15px;
-    width: 15px;
+    height: 16px;
+    width: 16px;
     /* margin: 0 2px; */
-    background-color: lightgray;
+    background-color: white;
     box-shadow: black;
     border-radius: 50%;
     display: inline-block;
     transform: rotate(90deg);
+    margin: 2px;
     /* transition: background-color 0.6s ease; */
+}
+
+.current{
+    background-color:#F5CA60;;
+}
+.dot:hover{
+    background-color: black;
 }
 .benny_pic{
     background-color: var(--bg2);
-    text-align: center;
+    /* text-align: center; */
     display: grid;
-    grid-template-columns: 0.5fr 1fr 0.5fr;
-    grid-template-areas:
-    "a b 0";
+    grid-template-columns: 1fr;
+    /* margin: 5em; */
+    /* grid-template-areas:
+    "a b 0"; */
 }
+
+
 .benny {
-    place-self: center;
+    width: 100%;
+    /* height: 100%;
+    object-fit: cover; */
+    padding: 0em 10.5em 0em 10.5em;
 }
-.ben {
+
+.card{
+   /* width: 100%; */
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+   padding: 0em 14em 0em 14em;
+}
+/* .ben {
     display: grid;
     grid-auto-rows: 100vh;
-    grid-gap: 2em;
-}
-.scrollspy {
-    grid-area: a;
-}
-.ben {
+    grid-row-gap: 2em;
     grid-area: b;
-    padding-top: 1em;
-}
-.first{
+    padding-top: 3em;
+} */
+/* 
+.ben {
+    height: 100%;
+    transition: transform 250ms ease-in;
+} */
+
+/* .pic {
+    padding: em;
+} */
+/* .one{
     display: grid;
-    padding:2em;
-    place-self: center center;
-}
+    padding:1em;
+    place-self: center;
+} */
+
 .nameHeart {
     display: grid;
     grid-template-columns: 1fr 0.5fr ;
+    padding-left: 10em;
 } 
 .description p{
     font-family: var(--fontBody);
     font-size: 1em;
     padding-top: 1em;
-    padding-bottom: 1em;
+    text-align: center;
+    
+    /* padding-bottom: 1em; */
 }
 
 /* comments and share section */
 .comment {
-    padding-top: 5em;
+    padding-top: 2em;
     text-align: center;
 }
 .shareThis {
     text-align: center;
-    padding-top: 3em;;
+    padding-top: 0.5em;;
 }
 .shareThis ul li {
-    padding: 1em;
+    padding: 0.5em;
     display: inline-block;
 }
 .shareThis ul li> a img {
-    width: 50px;
+    width: 2em;
 }
 
 /* footer */
 
-footer {
+/* footer {
     background-color: var(--bg2);
     text-align: center;
     color: var(--txt);
@@ -239,7 +290,7 @@ footer {
     color: var(--txt);
     font-family: var(--fontBody);
     font-weight: bold;
-}
+} */
 
 
 /* HOVERABLE MENTIONS and OTHERS;) */
