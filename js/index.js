@@ -4,45 +4,41 @@ $link.addEventListener('click', event => { console.log('clicked') })
 $link.getAttribute('href')
 
 
-
-
-// Part carousel 
+//Part Carousel + Scrollspy
 const benedicts = document.querySelector('.ben');
 const cards = Array.from(benedicts.children);
 const scrollSpy = document.querySelector('.scrollspy');
 const dots = Array.from(scrollSpy.children);
 
-const cardHeight = cards[0].getBoundingClientRect().height;
+let currentHighlightedIndex = 0;
 
-const setCardPosition = (card,index) => {
-  card.style.top = cardHeight * index + 'px';
-};
-cards.forEach(setCardPosition);
-
-const moveToSlide = (currentCard, targetCard) => {
-  currentCard.classList.remove('current');
-  targetCard.classList.add('current');
+const isCardInMiddle = (card, centreY) => {
+  let rectangleCard = card.getBoundingClientRect();
+  difference = Math.abs(centreY - rectangleCard.y);
+  return difference < 600;
 }
 
-window.addEventListener('scroll',e =>{
-  const currentCard = benedicts.querySelector('.current');
-  const nextCard = currentCard.nextElementSibling;
-  if (nextCard != null) {
-  // const amountToMove = nextCard.style.top;
-    currentCard.classList.remove('current');
-    nextCard.classList.add('current');
-  // benedicts.style.transform = 'translateY(' +amountToMove + ')';
+const highlightDot = (targetedIndex) => {
+  dots[currentHighlightedIndex].classList.remove('current');
+  dots[targetedIndex].classList.add('current');
+  currentHighlightedIndex = targetedIndex;
+}
+
+highlightDot(currentHighlightedIndex);
+
+const performAction = () => {
+  let centerY = document.documentElement.clientHeight / 2;
+
+  for (let index = 0; index < cards.length; index++) {
+    card = cards[index];
+    // Runs 5 times, with values of step 0 through 4.
+    if(isCardInMiddle(card, centerY)){
+        highlightDot(index);
+        break;
+    }
   }
-})
+}
 
-scrollSpy.addEventListener('click', e => {
-  const targetDot = e.target.closest('button');
-  
-  if (!targetDot) return;
-
-  // const currentCard = benedicts.querySelector('.current');
-  // const currentDot = scrollSpy.querySelector('current');
-  const targetIndex = dots.findIndex(dot => dot === targetDot);
-  const targetCard = cards[targetIndex];
-  targetCard.scrollIntoView();
-})
+window.addEventListener('scroll', (e) => {
+  performAction();
+});
