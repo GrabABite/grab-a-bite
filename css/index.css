@@ -17,15 +17,10 @@ body {
 }
 textarea {
     width: 350px;
-    height: 150px;
+    height: 50px;
     font-family: var(--fontBody);
     font-size: 1em;
-}
-button {
-    font-weight: bold;
-    padding:0.7em;
-    border-radius: 10%;
-    font-family: var(--fontBody);
+    align-self: right;
 }
 input {
     font-family: var(--fontBody);
@@ -159,6 +154,7 @@ i {
 .benny {
     place-self: center;
     width: 69vh;
+    border-radius: 5%;
 }
 .ben {
     display: grid;
@@ -188,7 +184,7 @@ i {
     display: grid;
     grid-template-columns: 1.5fr 0.5fr ;
 } 
-.nameHeart> h1 {
+.nameHeart> h1, a{
     place-self: center;
 }
 .nameHeart> a {
@@ -198,13 +194,38 @@ i {
 .description p{
     font-family: var(--fontBody);
     font-size: 1.5em;
-    padding: 1em 5em 1em 5em;
+    padding: 1em 5em 1em 3em;
 }
 
 /* comments and share section */
 .comment {
-    padding-top: 5em;
+    padding-top: 3em;
     text-align: center;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+.comment > form {
+    justify-self: right;
+    padding-right: 0.5em;
+}
+.comment > .addComment {
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
+    border-radius: 10%;
+    font-family: var(--fontBody);
+}
+.commList > .commentList {
+    list-style: none;
+    text-align: center;
+    list-style: none;
+}
+.commList > ul li {
+    background-color: var(--bg3);
+    text-align: center;
+    margin: 20px;
+    overflow: auto;
+    padding: 10px;
 }
 .shareThis {
     text-align: center;
@@ -218,42 +239,11 @@ i {
     width: 50px;
 }
 
-/* footer */
 
-footer {
-    background-color: var(--bg2);
-    text-align: center;
-    color: var(--txt);
-    padding-top: 3em;
-}
-.subscribe {
-    padding: 1em;
-    padding-top: 3em;
-}
-.subscribe> input {
-    width: 15%;
-    padding:0.7em;
-    border-radius: 10%;
-}
-.socMed> ul> li {
+ul {
     list-style: none;
-    display: inline-block;
-    text-align: center;
-}
-.socMed> ul> li {
-    padding: 2em;
-}
-.siteTerms> ul> li {
-    list-style: none;
-    display: inline-block;
-    text-align: center;
-    padding: 2em;
-}
-.siteTerms> ul>li a {
-    color: var(--txt);
-    font-family: var(--fontBody);
-    font-weight: bold;
-}
+  }
+
 
 
 /* HOVERABLE MENTIONS and OTHERS;) */
