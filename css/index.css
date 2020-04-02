@@ -145,6 +145,13 @@ main> section> .intro ul li {
 
 
 /* the foods/ ourBennies section */
+*{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
 
 .scrollspy {
     position: sticky;
@@ -171,12 +178,14 @@ main> section> .intro ul li {
     /* transition: background-color 0.6s ease; */
 }
 
-.current{
-    background-color:#F5CA60;;
-}
 .dot:hover{
-    background-color: black;
+    background-color: lightgrey;
 }
+
+.current{
+    background-color:#F5CA60;
+}
+
 .benny_pic{
     background-color: var(--bg2);
     /* text-align: center; */
@@ -190,16 +199,20 @@ main> section> .intro ul li {
 
 .benny {
     width: 100%;
+    /* place-self: center; */
     /* height: 100%;
     object-fit: cover; */
     padding: 0em 10.5em 0em 10.5em;
 }
 
 .card{
-   /* width: 100%; */
+   /* width: 100%;
+   height: 100vh; */
    margin-left: auto;
-   margin-right: auto;
+   margin-right: auto; 
    display: block;
+   /* display: flex;
+   justify-content: center; */
    padding: 0em 14em 0em 14em;
 }
 /* .ben {
