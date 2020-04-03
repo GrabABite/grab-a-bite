@@ -242,7 +242,7 @@ i {
 }
 .bennyHistory {
     position: relative;
-    height: 100vh;
+    height: 100%;
     background-color: var(--bg3);
 }
 .bennyHistory> p {
@@ -255,6 +255,7 @@ i {
     padding: 2em;
 } 
 .fade-in {
+    display: grid;
     position: absolute;
     height: 100vh;
     padding: 3em;;
