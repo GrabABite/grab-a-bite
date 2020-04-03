@@ -45,6 +45,10 @@ window.addEventListener('scroll', (e) => {
   performAction();
 });
 
+//Part C: Infinte Scroll/ loop
+
+
+
 
 
 // Part D
