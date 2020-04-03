@@ -67,39 +67,37 @@ let theBennyList = (event) => {
 
     // Add new content when we hit the bottom
     document.querySelector('#ben').innerHTML += `
-    <section id="0" class="one card current">
-    <img src="img/avocado.jpg" alt="Egg B1" class="benny">
+    <section id="10" class="eleven card">
+                        <img src="img/waffle_bene.jpg" alt="Egg B2" class="benny">
 
-    <div class="nameHeart" id="nameHeart">
-        <h1>Avocado Eggs Benedict</h1>
-        <a href="#"><i class="material-icons" id="fave">favorite_border</i></a>
-    </div>
+                        <div class="nameHeart" id="nameHeart">
+                            <h1>Waffles Eggs Benedict</h1>
+                            <a href="#"><i class="material-icons" id="fave">favorite_border</i></a>
+                        </div>
+                        <div class="description">
+                            <p>Never have I ever had eggs benedict on waffles?? Try it! It tastes so different but in a good way. You can taste the mixture of creamy hollandaise sauce and runny yolk but also a tad bit of sweetness from the waffle.  If you’re not an English muffin person, give the waffle eggs benedict a try and I promise it’s going to be worth it.  Unlike English muffin, waffles have square dotted pockets which is perfect to hold the runny yolk and sauce. </p> 
+                        </div>
 
-    <div class="description">
-        <p>Avocado is known as good fat; it’s loaded with many nutrients and heart - healthy fatty acid. Avocado and eggs are like yin and yang, they’re simply perfect together. What’s a better benedict combo than avocado eggs benedict. The buttery hollandaise sauce adds the signature creaminess to it. This basic benedict is so simple, and you can easily make it from scratch at home. Truly it is the ultimate avocado-egg lover’s breakfast or brunch</p> 
-    </div>
+                        <div class="comment" id="comment">
+                            <form>
+                                <label for="comment"></label>
+                                <textarea class="comments" placeholder="Let us know what you think!" id="comments"></textarea>
+                            </form>
+                            <button class="addComment" id="addComment"> COMMENT </button>
+                        </div>
 
-    <div class="comment" id="comment">
-        <form>
-            <label for="comment"></label>
-            <textarea class="comments" placeholder="Let us know what you think!" name="comments" id="comments"></textarea>
-        </form>
-        <button class="addComment" id="addComment"> COMMENT </button>
-    </div>
+                        <div class="commList">
+                            <ul class="commentList" id="commentList"></ul>
+                        </div>
+                        <div class="shareThis" id="shareThis">
+                            <ul>
+                            <li><a href="https://www.facebook.com/login"><img src="img/facebook.svg"></a></li>
+                            <li><a href="https://www.instagram.com/accounts/login/?hl=en"><img src="img/instagram.svg"></a></li>
+                            <li><a href="https://twitter.com/login"><img src="img/twitter.svg"></a><li>
+                            </ul>
+                        </div>
 
-    <div class="commList">
-        <ul class="commentList" id="commentList"></ul>
-    </div>
-
-    <div class="shareThis" id="shareThis">
-        <ul>
-        <li><a href="https://www.facebook.com/login"><img src="img/facebook.svg"></a></li>
-        <li><a href="https://www.instagram.com/accounts/login/?hl=en"><img src="img/instagram.svg"></a></li>
-        <li><a href="https://twitter.com/login"><img src="img/twitter.svg"></a><li>
-        </ul>
-    </div>
-
-</section>
+                    </section>
       `
     checkHowManyThereAre(document.querySelector('#ben'), 'section.card')
 
