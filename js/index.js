@@ -15,7 +15,7 @@ let currentHighlightedIndex = 0;
 const isCardInMiddle = (card, centreY) => {
   let rectangleCard = card.getBoundingClientRect();
   difference = Math.abs(centreY - rectangleCard.y);
-  return difference < 600;
+  return difference < 500;
 }
 
 const highlightDot = (targetedIndex) => {
