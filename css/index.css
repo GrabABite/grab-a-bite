@@ -161,9 +161,10 @@ input {
 .card{
    margin-left: auto;
    margin-right: auto; 
-   display: block;
-  
+   display: grid;
    padding: 0em 14em 0em 14em;
+   height: 100%R;
+   scroll-snap-align: start;
 }
 .ben {
     text-align: center;
@@ -173,14 +174,14 @@ input {
     overflow-y: scroll;
     /* height: 100vh; */
 }
-.ben> section {
+/* .ben> section {
     display: grid;
     padding: 2em;
     margin-left: 4em;
     margin-right: 4em;;
     height: 100vh;
     scroll-snap-align: start;
-}
+} */
 .nameHeart {
     display: grid;
     grid-template-columns: 1fr 0.5fr ;
