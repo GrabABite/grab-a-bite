@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Leckerli+One&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
 
+html, body, main{
+    height: 100%;
+}
 :root {
     --fontHead: 'Leckerli One', cursive;
     --fontBody: 'Abel', sans-serif;
@@ -25,11 +28,17 @@ textarea {
 input {
     font-family: var(--fontBody);
 }
-i {
-    font-size: 22px;
+ i {
+    /* font-size: 10px; */
     color: var(--txt);
-    padding: 8px 12px;
+    float: right;
 }
+
+.material-icons{
+   margin-right: 7em;
+}
+
+
 
 /* landing pg */
 .startPg {
@@ -60,37 +69,6 @@ i {
     left: 50%;
 }
 
-/* flippers */
-/*.bennies {
-    perspective: 800px;
-}
-.bennies:hover .flipper {
-    transform: rotateY(180deg);
-}
-.intro {
-    z-index: 3em;
-}
-.intro .benny_pic {
-    position: absolute;
-    backface-visibility: hidden;
-}
- .vertical.bennies {
-	position: relative;
-}
-
-	.vertical .benny_pic {
-		transform: rotateX(180deg);
-	}
-
-	.vertical.bennies .flipper {
-		transform-origin: 100% 213.5px; /* half of height 
-	}
-
-	.vertical.bennies:hover .flipper {
-		transform: rotateX(-180deg);
-	} */
-
-/* bennies */
 .bennies {
     background-color: var(--bg);
 }
@@ -122,67 +100,91 @@ i {
     height: 100vh;
 }
 
-/* SCROLLSPY */
-
-
-
-
-
-
 
 /* the foods/ ourBennies section */
+*{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+.scrollspy {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    /* padding-left: 37.5em; */
+    cursor: pointer;
+    /* text-align: center;    */
+}
+
 .dot{
     /* cursor: pointer; */
-    height: 15px;
-    width: 15px;
+    height: 16px;
+    width: 16px;
     /* margin: 0 2px; */
-    background-color: lightgray;
+    background-color: white;
     box-shadow: black;
     border-radius: 50%;
     display: inline-block;
     transform: rotate(90deg);
+    margin: 2px;
     /* transition: background-color 0.6s ease; */
 }
+
+.dot:hover{
+    background-color: lightgrey;
+}
+
+.current{
+    background-color:#F5CA60;
+}
+
 .benny_pic{
     background-color: var(--bg2);
-    text-align: center;
-    display: grid;
-    grid-template-columns: 0.5fr 2fr 0.5fr;
-    grid-template-areas:
-    "a b 0";
+    /* display: grid; */
+    grid-template-columns: 1fr;
+    /* margin: 5em; */
+    /* grid-template-areas:
+    "a b 0"; */
 }
+
 .benny {
     place-self: center;
     width: 69vh;
     border-radius: 5%;
 }
+
+.card{
+   margin-left: auto;
+   margin-right: auto; 
+   display: block;
+  
+   padding: 0em 14em 0em 14em;
+}
 .ben {
+    text-align: center;
     display: grid;
-    grid-auto-rows: 100vh;
-    grid-gap: 2em;
-    grid-area: b;
-    padding-top: 1em;
+    grid-auto-rows: 100vh; 
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-    height: 100vh;   
+    /* height: 100vh; */
 }
-.ben::-webkit-scrollbar { 
-    display: none;  
-}
-.ben> .first {
+.ben> section {
     display: grid;
-    padding:2.5em;
-    text-align: center;
-    scroll-snap-align: start;
+    padding: 2em;
+    margin-left: 4em;
+    margin-right: 4em;;
     height: 100vh;
-}
-
-.scrollspy {
-    grid-area: a;
+    scroll-snap-align: start;
 }
 .nameHeart {
     display: grid;
-    grid-template-columns: 1.5fr 0.5fr ;
+    grid-template-columns: 1fr 0.5fr ;
+    padding-left: 10em;
 } 
 .nameHeart> h1, a{
     place-self: center;
@@ -195,14 +197,15 @@ i {
     font-family: var(--fontBody);
     font-size: 1.5em;
     padding: 1em 5em 1em 3em;
+    text-align: center;
 }
 
 /* comments and share section */
 .comment {
-    padding-top: 3em;
+    padding-top: 2em;
     text-align: center;
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1.2fr 1fr;
 }
 .comment > form {
     justify-self: right;
@@ -226,18 +229,15 @@ i {
 
 .shareThis {
     text-align: center;
-    padding-top: 3em;;
+    padding-top: 0.5em;;
 }
 .shareThis ul li {
-    padding: 1em;
+    padding: 0.5em;
     display: inline-block;
 }
 .shareThis ul li> a img {
-    width: 50px;
+    width: 2em;
 }
-
-
-
 
 /* HOVERABLE MENTIONS and OTHERS;) */
 button:hover {
