@@ -54,7 +54,7 @@ window.addEventListener('scroll', (e) => {
   performAction();
 });
 
-//part C
+//Part infinite loop
 
 let reachLastPg = false
 
@@ -113,3 +113,14 @@ let theBennyList = (event) => {
 window.addEventListener('load', theBennyList)
 window.addEventListener('scroll', theBennyList)
 window.addEventListener('resize', theBennyList)
+
+
+// Part scroll down
+// let $docExtra = document.documentElement
+// let $linkExtra = document.querySelector('.expand')
+// $linkExtra.addEventListener('click', event => {
+//   $linkExtra.getElementById('.bennyHistory')
+// })
+function expandH() {
+    document.getElementById('.bennyHistory').innerHTML = "";
+}
