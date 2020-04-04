@@ -199,6 +199,7 @@ main> section> .intro ul li {
     /* text-align: center; */
     display: grid;
     grid-template-columns: 1fr;
+    
     /* margin: 5em; */
     /* grid-template-areas:
     "a b 0"; */
@@ -207,6 +208,7 @@ main> section> .intro ul li {
 
 .benny {
     width: 100%;
+    /* border-radius: 1.5em; */
     /* place-self: center; */
     /* height: 100%;
     object-fit: cover; */
@@ -309,6 +311,7 @@ main> section> .intro ul li {
     /* width: 100%;
     justify-self: center; */
     padding: 1em;
+    /* border-radius: 1.5em; */
 }
 
 .fade-in {
