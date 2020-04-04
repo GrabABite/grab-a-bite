@@ -40,29 +40,29 @@ i {
 }
 
 /* landing pg */
-header {
+.startPg {
     position: relative;
     padding-top: 0px;
     margin-top: 0px;
     display: block;
     height: 100vh;
 }
-header ul {
+.startPg ul {
     transition: transform 0.3s;
 }
-header> ul li {
+.startPg> ul li {
     font-family: var(--fontBody);
     text-align: center;
     font-size: 1.5em;
     padding: 0.3em;
 }
-header> ul li:first-child {
+.startPg> ul li:first-child {
     font-family: var(--fontHead);
     font-size: 6em;
     text-align: center;
     padding-top:4em;
 }
-header> ul li:nth-child(3) {
+.startPg> ul li:nth-child(3) {
     position: absolute;
     top: 90%;
     left: 50%;
@@ -99,27 +99,27 @@ header> ul li:nth-child(3) {
 	} */
 
 /* bennies */
-main {
+.bennies {
     background-color: var(--bg);
 }
-main h1{
+.bennies h1{
     font-family: var(--fontHead);
     font-size: 2em;
 }
-main p {
+.bennies p {
     font-family: var(--fontBody);
     font-size: 1.5em;
 }
-main> section> .intro {
+.bennies> .flipper> .intro {
     position: relative;
 }
-main> section> .intro ul{
+.bennies> .flipper> .intro ul{
     position: absolute;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-main> section> .intro ul li {
+.bennies> .flipper> .intro ul li {
     padding:1em;
 }
 .intro {
@@ -129,10 +129,13 @@ main> section> .intro ul li {
     display: block;
     height: 100vh;
 }
-/* .egg_pg {
-    transform: scaleY(-1);
-    margin: 10em 0;
-} */
+
+/* SCROLLSPY */
+
+
+
+
+
 
 
 /* the foods/ ourBennies section */
