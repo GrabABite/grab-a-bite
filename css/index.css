@@ -157,8 +157,8 @@ i {
 }
 
 .card{
-   margin-left: 15%;
-   margin-right: 15%; 
+   margin-left: auto;
+   margin-right: auto; 
    display: grid;
    padding: 0em 14em 0em 14em;
    height: 100%R;
@@ -224,7 +224,7 @@ i {
     
     width: 50%;
     background-color: var(--bg3);
-    border radius: 10%;
+    border-radius: 10%;
     font-family: var(--fontBody);
     font-size: 1.2em;
 }
@@ -242,7 +242,8 @@ i {
 }
 .bennyHistory {
     height: 100%;
-    background-color: var(--bg3);
+    background-color: #F5CA60;
+    position: relative;
 }
 .bennyHistory> p {
     font-size: 1em;
@@ -259,6 +260,7 @@ i {
     place-self: center;;
     margin-left: 20%;
     margin-right: 20%;
+    position: absolute;
 }
 .fade-in ul li {
     font-family: var(--fontBody);
