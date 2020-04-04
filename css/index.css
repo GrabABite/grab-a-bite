@@ -36,7 +36,8 @@ button {
 input {
     font-family: var(--fontBody);
 }
- i {
+
+i {
     /* font-size: 10px; */
     color: var(--txt);
     float: right;
@@ -50,35 +51,35 @@ input {
     font-family: var(--fontHead);
     font-size: 2em;
     text-align: center;
-    padding: 2em;
+    padding: 1em;
 }
 
 
 
 /* landing pg */
-header {
+.startPg {
     position: relative;
     padding-top: 0px;
     margin-top: 0px;
     display: block;
     height: 100vh;
 }
-header ul {
+.startPg ul {
     transition: transform 0.3s;
 }
-header> ul li {
+.startPg> ul li {
     font-family: var(--fontBody);
     text-align: center;
     font-size: 1.5em;
     padding: 0.3em;
 }
-header> ul li:first-child {
+.startPg> ul li:first-child {
     font-family: var(--fontHead);
     font-size: 6em;
     text-align: center;
     padding-top:4em;
 }
-header> ul li:nth-child(3) {
+.startPg> ul li:nth-child(3) {
     position: absolute;
     top: 90%;
     left: 50%;
@@ -116,27 +117,27 @@ header> ul li:nth-child(3) {
 	} */
 
 /* bennies */
-main {
+.bennies {
     background-color: var(--bg);
 }
-main h1{
+.bennies h1{
     font-family: var(--fontHead);
     font-size: 2em;
 }
-main p {
+.bennies p {
     font-family: var(--fontBody);
     font-size: 1.5em;
 }
-main> section> .intro {
+.bennies> .flipper> .intro {
     position: relative;
 }
-main> section> .intro ul{
+.bennies> .flipper> .intro ul{
     position: absolute;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-main> section> .intro ul li {
+.bennies> .flipper> .intro ul li {
     padding:1em;
 }
 .intro {
@@ -223,43 +224,10 @@ main> section> .intro ul li {
    display: block;
    /* display: flex;
    justify-content: center; */
-   padding: 0em 14em 0em 14em;
+   padding: 0em 13em 0em 13em;
    
 }
 
-/* 
-.bennyHistory,
-.expand_1,
-.expand:target {
-    display:none;
-}
-
-.expand:target + .expand_1,
-.expand:target ~ .bennyHistory{
-    display: block;
-} */
-/* .ben {
-    display: grid;
-    grid-auto-rows: 100vh;
-    grid-row-gap: 2em;
-    grid-area: b;
-    padding-top: 3em;
-} */
-/* 
-
-.ben {
-    height: 100%;
-    transition: transform 250ms ease-in;
-} */
-
-/* .pic {
-    padding: em;
-} */
-/* .one{
-    display: grid;
-    padding:1em;
-    place-self: center;
-} */
 
 
 .nameHeart {
@@ -272,14 +240,38 @@ main> section> .intro ul li {
     font-size: 1em;
     padding-top: 1em;
     text-align: center;
-    
-    /* padding-bottom: 1em; */
 }
 
 /* comments and share section */
 .comment {
     padding-top: 2em;
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+}
+.comment > form {
+    justify-self: right;
+    padding-right: 0.25em;
+}
+.comment > .button {
+    margin-top: 1.6em;
+    width: 80px;
+    height: 40px;
+    font-weight: bold;
+    border-radius: 10%;
+    font-family: var(--fontBody);
+}
+.commList ul {
+    list-style: none;
+}
+.commList ul li {
+    border: 2px solid #000;
+    box-shadow: 2px 2px 2px rgba(0,0,0, 0.25);
+    margin: 20px;
+    overflow: auto;
+    padding: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 .shareThis {
     text-align: center;
@@ -292,6 +284,17 @@ main> section> .intro ul li {
 .shareThis ul li> a img {
     width: 2em;
 }
+
+@keyframes fadeIn {
+    from {     
+        transform: translateY(50%);
+    }
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
 
 .bennyHistory {
     height: 100%;
@@ -345,60 +348,36 @@ main> section> .intro ul li {
     font-size: 1.50em;
 }
 
-/* .expand:focus{
-    outline: none;
-}
-.expand:focus + #bennyHistory{
-    display: block;
-} */
+@-webkit-keyframes fadeIn {
+    from {
+        transform: translateY(-50%);
+    }
 
-.less{
-    cursor: pointer;
-    position: absolute;
-    background-color:whitesmoke;
-    margin-left: -3em;
-    font-size: 1.50em;
-    display: none;
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
 }
 
-
-/* footer */
-
-/* footer {
-    background-color: var(--bg2);
-    text-align: center;
-    color: var(--txt);
-    padding-top: 3em;
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
 }
-.subscribe {
-    padding: 1em;
-    padding-top: 3em;
+.animatedfadeIn {
+    opacity: 0;
 }
-.subscribe> input {
-    width: 15%;
-    padding:0.7em;
-    border-radius: 10%;
-}
-.socMed> ul> li {
-    list-style: none;
-    display: inline-block;
-    text-align: center;
-}
-.socMed> ul> li {
+.fadeIn {
+    transform: translateY(-50%);
+    opacity: 0;
+    animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
+    display: grid;
+    position: relative;
+    height: 100%;
     padding: 2em;
-}
-.siteTerms> ul> li {
-    list-style: none;
-    display: inline-block;
-    text-align: center;
-    padding: 2em;
-}
-.siteTerms> ul>li a {
-    color: var(--txt);
-    font-family: var(--fontBody);
-    font-weight: bold;
-} */
-
+} 
 
 /* HOVERABLE MENTIONS and OTHERS;) */
 button:hover {
