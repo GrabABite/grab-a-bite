@@ -46,6 +46,13 @@ input {
    margin-right: 7em;
 }
 
+.h2{
+    font-family: var(--fontHead);
+    font-size: 2em;
+    text-align: center;
+    padding: 2em;
+}
+
 
 
 /* landing pg */
@@ -76,6 +83,7 @@ header> ul li:nth-child(3) {
     top: 90%;
     left: 50%;
 }
+
 
 /* flippers */
 /*.bennies {
@@ -223,6 +231,7 @@ main> section> .intro ul li {
     padding-top: 3em;
 } */
 /* 
+
 .ben {
     height: 100%;
     transition: transform 250ms ease-in;
@@ -236,6 +245,7 @@ main> section> .intro ul li {
     padding:1em;
     place-self: center;
 } */
+
 
 .nameHeart {
     display: grid;
@@ -266,6 +276,43 @@ main> section> .intro ul li {
 }
 .shareThis ul li> a img {
     width: 2em;
+}
+
+.bennyHistory {
+    height: 100%;
+    background-color: #F5CA60;
+    position: relative;
+}
+.bennyHistory> p {
+    font-size: 1em;
+    place-self: center;
+}
+
+.lben {
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* width: 100%;
+    justify-self: center; */
+    padding: 1em;
+}
+
+.fade-in {
+    height: 100%;
+    /* padding: 3em; */
+    /* padding: 0em 14em 0em 14em; */
+    place-self: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    /* position: absolute; */
+}
+.fade-in ul li {
+    font-family: var(--fontBody);
+    font-size: 1.2em;
+    padding: 0.5em;
+}
+.fade-in p {
+    font-size: 1.3em;
+    padding: 0.5em;
 }
 
 /* footer */
