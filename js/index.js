@@ -40,26 +40,27 @@ const performAction = () => {
         break;
     }
   }
-  // for (let index = 0; index < cards.length; index++) {
-  //   card = cards[index];
-    
-  //   if(isCardInMiddle(card, centerY)){
-  //       highlightDot(index);
-  //       break;
-  //   }
-  // }
 }
 
 window.addEventListener('scroll', (e) => {
   performAction();
 });
 
-//Part infinite loop
+//more button
+const enableScrolling = (event) => {
+  theBennyList(event);
+  window.addEventListener('load', theBennyList);
+  window.addEventListener('scroll', theBennyList);
+  window.addEventListener('resize', theBennyList);
+}
 
+let moreButton= document.querySelector('.more');
+moreButton.addEventListener('click', enableScrolling) 
+
+//Part infinite loop
 let reachLastPg = false
 
 let theBennyList = (event) => { 
-  
   let winH = document.documentElement.clientHeight
   let winW = document.documentElement.clientWidth
   let docH = document.documentElement.scrollHeight
@@ -110,12 +111,7 @@ let theBennyList = (event) => {
 }
 
 
-window.addEventListener('load', theBennyList)
-window.addEventListener('scroll', theBennyList)
-window.addEventListener('resize', theBennyList)
 
-
-// Part scroll down
-function expandH() {
-    document.getElementById('.bennyHistory').innerHTML = "";
-}
+// window.addEventListener('load', theBennyList)
+// window.addEventListener('scroll', theBennyList) 
+// window.addEventListener('resize', theBennyList)
