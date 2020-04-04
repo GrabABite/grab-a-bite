@@ -94,7 +94,6 @@ let theBennyList = (event) => {
         <li>Eggs la Benedict – Split and toast English muffins. Sautcircular pieces of cold boiled ham, place these over the halves of muffins, arrange on each a dropped egg, and pour around Hollandaise Sauce II, diluted with cream to make of such consistency to pour easily.</li>
       </ul>
     </article>
-    
 </section>
       `
 
