@@ -37,7 +37,7 @@ https://yalantis.com/blog/web-animation-technologies-and-tools/
 #INSPO:
 https://yalantis.com/
 
-#FINAL: viewer can comment, share and favorite images on the gallery photos.
+#FINAL: viewer can comment and share images on the gallery photos.
 
 --------------------------------------------------------------------------------------
 
@@ -81,11 +81,7 @@ https://yalantis.com/
 #the picture zoom out
 
 #MORE TO BE DONE FOR CSS
-#1. THE FLIP
-
-#2. FIXING THE BENNY_PICS. 
-    #A. DROPDOWN FOR THE DETAIL BUTTONS
-    #B. SIZE MAKE THEM LOOK THEY ARE ON A GRID
+#1. FIXING THE BENNY_PICS. 
 
 #FOR JAVASCRIPT
 #1. Script for the 1st pg/section jumping to the next one. Tied to this /<i class="material-icons" id="drop">arrow_drop_down_circle</i>/
@@ -94,4 +90,4 @@ https://yalantis.com/
 
 #3. The carouseL
 
-#4. 
+#4. Comment Section
