@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Leckerli+One&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
 
+html, body, main{
+    height: 100%;
+}
 :root {
     --fontHead: 'Leckerli One', cursive;
     --fontBody: 'Abel', sans-serif;
@@ -20,7 +23,7 @@ img {
 }
 textarea {
     width: 350px;
-    height: 150px;
+    height: 80px;
     font-family: var(--fontBody);
     font-size: 1em;
 }
@@ -33,11 +36,25 @@ button {
 input {
     font-family: var(--fontBody);
 }
+
 i {
-    font-size: 22px;
+    /* font-size: 10px; */
     color: var(--txt);
-    padding: 8px 12px;
+    float: right;
 }
+
+.material-icons{
+   margin-right: 7em;
+}
+
+.h2{
+    font-family: var(--fontHead);
+    font-size: 2em;
+    text-align: center;
+    padding: 1em;
+}
+
+
 
 /* landing pg */
 .startPg {
@@ -67,6 +84,7 @@ i {
     top: 90%;
     left: 50%;
 }
+
 
 /* flippers */
 /*.bennies {
@@ -139,111 +157,230 @@ i {
 
 
 /* the foods/ ourBennies section */
+*{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+.scrollspy {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    /* padding-left: 37.5em; */
+    cursor: pointer;
+    /* text-align: center;    */
+}
+
 .dot{
     /* cursor: pointer; */
-    height: 15px;
-    width: 15px;
+    height: 16px;
+    width: 16px;
     /* margin: 0 2px; */
-    background-color: lightgray;
+    background-color: white;
     box-shadow: black;
     border-radius: 50%;
     display: inline-block;
     transform: rotate(90deg);
+    margin: 2px;
     /* transition: background-color 0.6s ease; */
 }
+
+.dot:hover{
+    background-color: lightgrey;
+}
+
+.current{
+    background-color:#F5CA60;
+}
+
 .benny_pic{
     background-color: var(--bg2);
-    text-align: center;
+    /* text-align: center; */
     display: grid;
-    grid-template-columns: 0.5fr 1fr 0.5fr;
-    grid-template-areas:
-    "a b 0";
+    grid-template-columns: 1fr;
+    
+    /* margin: 5em; */
+    /* grid-template-areas:
+    "a b 0"; */
 }
+
+
 .benny {
-    place-self: center;
+    width: 100%;
+    /* border-radius: 1.5em; */
+    /* place-self: center; */
+    /* height: 100%;
+    object-fit: cover; */
+    padding: 0em 10.5em 0em 10.5em;
 }
-.ben {
-    display: grid;
-    grid-auto-rows: 100vh;
-    grid-gap: 2em;
+
+.card{
+   /* width: 100%;
+   height: 100vh; */
+   margin-left: auto;
+   margin-right: auto; 
+   display: block;
+   /* display: flex;
+   justify-content: center; */
+   padding: 0em 13em 0em 13em;
+   
 }
-.scrollspy {
-    grid-area: a;
-}
-.ben {
-    grid-area: b;
-    padding-top: 1em;
-}
-.first{
-    display: grid;
-    padding:2em;
-    place-self: center center;
-}
+
+
+
 .nameHeart {
     display: grid;
     grid-template-columns: 1fr 0.5fr ;
+    padding-left: 10em;
 } 
 .description p{
     font-family: var(--fontBody);
     font-size: 1em;
     padding-top: 1em;
-    padding-bottom: 1em;
+    text-align: center;
 }
 
 /* comments and share section */
 .comment {
-    padding-top: 5em;
+    padding-top: 2em;
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+}
+.comment > form {
+    justify-self: right;
+    padding-right: 0.25em;
+}
+.comment > .button {
+    margin-top: 1.6em;
+    width: 80px;
+    height: 40px;
+    font-weight: bold;
+    border-radius: 10%;
+    font-family: var(--fontBody);
+}
+.commList ul {
+    list-style: none;
+}
+.commList ul li {
+    border: 2px solid #000;
+    box-shadow: 2px 2px 2px rgba(0,0,0, 0.25);
+    margin: 20px;
+    overflow: auto;
+    padding: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 .shareThis {
     text-align: center;
-    padding-top: 3em;;
+    padding-top: 0.5em;;
 }
 .shareThis ul li {
-    padding: 1em;
+    padding: 0.5em;
     display: inline-block;
 }
 .shareThis ul li> a img {
-    width: 50px;
+    width: 2em;
 }
 
-/* footer */
-
-footer {
-    background-color: var(--bg2);
-    text-align: center;
-    color: var(--txt);
-    padding-top: 3em;
+@keyframes fadeIn {
+    from {     
+        transform: translateY(50%);
+    }
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
 }
-.subscribe {
+
+
+.bennyHistory {
+    height: 100%;
+    background-color: #F5CA60;
+    position: relative;
+    /* display: none; */
+}
+.bennyHistory> p {
+    font-size: 1em;
+    place-self: center;
+    
+}
+
+.lben {
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* width: 100%;
+    justify-self: center; */
     padding: 1em;
-    padding-top: 3em;
-}
-.subscribe> input {
-    width: 15%;
-    padding:0.7em;
-    border-radius: 10%;
-}
-.socMed> ul> li {
-    list-style: none;
-    display: inline-block;
-    text-align: center;
-}
-.socMed> ul> li {
-    padding: 2em;
-}
-.siteTerms> ul> li {
-    list-style: none;
-    display: inline-block;
-    text-align: center;
-    padding: 2em;
-}
-.siteTerms> ul>li a {
-    color: var(--txt);
-    font-family: var(--fontBody);
-    font-weight: bold;
+    /* border-radius: 1.5em; */
 }
 
+.fade-in {
+    height: 100%;
+    /* padding: 3em; */
+    /* padding: 0em 14em 0em 14em; */
+    place-self: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    /* position: absolute; */
+}
+.fade-in ul li {
+    font-family: var(--fontBody);
+    font-size: 1.2em;
+    padding: 0.5em;
+}
+.fade-in p {
+    font-size: 1.3em;
+    padding: 0.5em;
+}
+
+/* .bennyHistory:target {
+    display: block;
+} */
+
+.more{
+    cursor: pointer;
+    position: absolute;
+    background-color:whitesmoke;
+    margin-left: -3em;
+    font-size: 1.50em;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        transform: translateY(-50%);
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+}
+.animatedfadeIn {
+    opacity: 0;
+}
+.fadeIn {
+    transform: translateY(-50%);
+    opacity: 0;
+    animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
+    display: grid;
+    position: relative;
+    height: 100%;
+    padding: 2em;
+} 
 
 /* HOVERABLE MENTIONS and OTHERS;) */
 button:hover {

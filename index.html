@@ -39,41 +39,55 @@
            
 
             <article class="benny_pic" id="ourBennies">
+                
                 <div class="scrollspy">
-                    <span class="dot" ></span> 
-                    <span class="dot" ></span> 
-                    <span class="dot" ></span> 
-                    <span class="dot" ></span> 
-                    <span class="dot" ></span> 
-                    <span class="dot" ></span> 
-                    <span class="dot" ></span> 
-                    <span class="dot" ></span> 
-                    <span class="dot" ></span> 
-                    <span class="dot" ></span> 
-                    <span class="dot" ></span> 
+        
+                    <a href="#0" class="dot one current"></a>
+                    <a href="#1" class="dot two" ></a> 
+                    <a href="#2" class="dot three" ></a> 
+                    <a href="#3" class="dot four" ></a>
+                    <a href="#4" class="dot five" ></a>
+                    <a href="#5" class="dot six" ></a>
+                    <a href="#6" class="dot seven" ></a>
+                    <a href="#7" class="dot eight" ></a>
+                    <a href="#8" class="dot nine" ></a>
+                    <a href="#9" class="dot ten" ></a>
+                    <a href="#10" class="dot eleven" ></a>
                 </div>
 
-                <div class="ben">
-                    <section class="first">
+                <div class="ben" id="ben">
+                    <section id="0" class="one card current">
                         <img src="img/avocado.jpg" alt="Egg B1" class="benny">
 
                         <div class="nameHeart" id="nameHeart">
                             <h1>Avocado Eggs Benedict</h1>
                             <a href="#"><i class="material-icons" id="fave">favorite_border</i></a>
                         </div>
+
                         <div class="description">
-                            
                             <p>Avocado is known as good fat; it’s loaded with many nutrients and heart - healthy fatty acid. Avocado and eggs are like yin and yang, they’re simply perfect together. What’s a better benedict combo than avocado eggs benedict. The buttery hollandaise sauce adds the signature creaminess to it. This basic benedict is so simple, and you can easily make it from scratch at home. Truly it is the ultimate avocado-egg lover’s breakfast or brunch</p> 
                         </div>
 
-                        <div class="comment" id="comment">
+                        <!-- <div class="comment" id="comment">
                             <form>
                                 <label for="comment"></label>
                                 <textarea class="comments" placeholder="Let us know what you think!" name="comments" id="comments"></textarea>
                             </form>
                             <button class="addComment" id="addComment"> COMMENT </button>
                         </div>
-                        
+                         -->
+                         <div class="comment" id="comment">
+                            <form>
+                                <label for="comment1"></label>
+                                <textarea class="comments1" placeholder="Let us know what you think!" name="comments1" id="comments1"></textarea>
+                            </form>
+                            <button onclick="commentSection(1)" class="addComment1 button" id="addComment1"> COMMENT </button>
+                        </div>
+
+                        <div class="commList">
+                            <ul class="commentList1" id="commentList1"></ul>
+                        </div>
+
                         <div class="shareThis" id="shareThis">
                             <ul>
                             <li><a href="https://www.facebook.com/login"><img src="img/facebook.svg"></a></li>
@@ -84,7 +98,7 @@
 
                     </section> 
 
-                    <section class="first">
+                    <section id="1" class="two card">
                         <img src="img/beef_arugula.jpg" alt="Egg B2" class="benny">
 
                         <div class="nameHeart" id="nameHeart">
@@ -95,12 +109,16 @@
                             <p>If you want to be extra fancy about your egg benedict, go with a steak and arugula eggs benedict. The speciality about this benedict is that it does not use any kind of carbs. It is made of poaches eggs, steak, arugula and tomato slices instead of bread.  It looks amazing but tastes heavenly. The layers compliment each other in a great way. There is a tangy flavour to this dish, as it has lemon and dijon mustard. This is not only a breakfast or brunch dish, but could be a filling lunch or dinner.</p> 
                         </div>
 
-                        <div class="comment" id="comment">
+                        <div class="comment" id="comments">
                             <form>
                                 <label for="comment"></label>
-                                <textarea class="comments" placeholder="Let us know what you think!" name="comments" id="comments"></textarea>
+                                <textarea class="comments2" placeholder="Let us know what you think!" name="comments" id="comments2"></textarea>
                             </form>
-                            <button class="addComment" id="addComment"> COMMENT </button>
+                            <button onclick="commentSection(2)" class="addComment2 button" id="addComment2"> COMMENT </button>    
+                        </div>
+
+                        <div class="commList">
+                            <ul class="commentList2" id="commentList2"></ul>
                         </div>
 
                         <div class="shareThis" id="shareThis">
@@ -113,7 +131,7 @@
 
                     </section> 
 
-                    <section class="first">
+                    <section id="2" class="three card">
                         <img src="img/benny_on_salmon.jpg" alt="Egg B2" class="benny">
 
                         <div class="nameHeart" id="nameHeart">
@@ -126,14 +144,17 @@
                             <p>You got to love this dish! Each and every ingredient in here compliments each other. It’s packed with all the nutrients you need. So colourful and vibrant benny on salmon and avocado. This could be a great dish for a low carb diet as well. As avocado is full of fat, it makes you as full as a slice of bread would. Smoked salmon on the other hand, provide source of protein and tastes marvelous when paired with avocado and eggs. If you can handle hot sauce, pair it up with tabasco sauce that gives great kick to the flavour.</p> 
                         </div>
 
-                        <div class="comment" id="comment">
+                        <div class="comment" id="comments">
                             <form>
                                 <label for="comment"></label>
-                                <textarea class="comments" placeholder="Let us know what you think!" name="comments" id="comments"></textarea>
+                                <textarea class="comments3" placeholder="Let us know what you think!" name="comments" id="comments3"></textarea>
                             </form>
-                            <button class="addComment" id="addComment"> COMMENT </button>
+                            <button onclick="commentSection(3)" class="addComment3 button" id="addComment3"> COMMENT </button>    
                         </div>
-                        
+
+                        <div class="commList">
+                            <ul class="commentList3" id="commentList3"></ul>
+                        </div>
 
                         <div class="shareThis" id="shareThis">
                             <ul>
@@ -146,7 +167,7 @@
                     </section> 
 
 
-                    <section class="first">
+                    <section id="3" class="four card">
                         <img src="img/burger_patty.jpg" alt="Egg B2" class="benny">
 
                         <div class="nameHeart" id="nameHeart">
@@ -160,12 +181,16 @@
                             This burger patty eggs benedict is rich with flavours. It consists of a huge seasoned burger patty, poached eggs and hollandaise sauce. It’s hard to decide the best time to enjoy this meal. Personally, would recommend skipping this dish in the morning as it can make you feel really full and heavy. But hey, patio season is almost here, and I think it might be awesome to enjoy it outdoors.</p> 
                         </div>
 
-                        <div class="comment" id="comment">
+                        <div class="comment" id="comments">
                             <form>
                                 <label for="comment"></label>
-                                <textarea class="comments" placeholder="Let us know what you think!" name="comments" id="comments"></textarea>
+                                <textarea class="comments4" placeholder="Let us know what you think!" name="comments" id="comments4"></textarea>
                             </form>
-                            <button class="addComment" id="addComment"> COMMENT </button>
+                            <button onclick="commentSection(4)" class="addComment4 button" id="addComment4"> COMMENT </button>    
+                        </div>
+
+                        <div class="commList">
+                            <ul class="commentList4" id="commentList4"></ul>
                         </div>
 
                         <div class="shareThis" id="shareThis">
@@ -178,7 +203,7 @@
 
                     </section> 
 
-                    <section class="first">
+                    <section id="4" class="five card">
                         <img src="img/fish_bene.jpg" alt="Egg B2" class="benny">
 
                         <div class="nameHeart" id="nameHeart">
@@ -191,13 +216,18 @@
                             <p>This benedict is very different from the usual egg benedict. It’s made with thin layer of basa fish cutlet, poached eggs, english muffin and let’s not forget the important ingredient, which is the Hollandaise sauce. The fish cutlet is full of flavour with a hint sweet and sour sauce. Highly recommend if you love anything and everything fish. Every bite is purely satisfying!! If you’re up for a taste adventure it is a must try!</p> 
                         </div>
 
-                        <div class="comment" id="comment">
+                        <div class="comment" id="comments">
                             <form>
                                 <label for="comment"></label>
-                                <textarea class="comments" placeholder="Let us know what you think!" name="comments" id="comments"></textarea>
+                                <textarea class="comments5" placeholder="Let us know what you think!" name="comments" id="comments5"></textarea>
                             </form>
-                            <button class="addComment" id="addComment"> COMMENT </button>
+                            <button onclick="commentSection(5)" class="addComment5 button" id="addComment5"> COMMENT </button>    
                         </div>
+
+                        <div class="commList">
+                            <ul class="commentList5" id="commentList5"></ul>
+                        </div>
+
                         
                         <div class="shareThis" id="shareThis">
                             <ul>
@@ -209,7 +239,7 @@
 
                     </section> 
 
-                    <section class="first">
+                    <section id="5" class="six card">
                         <img src="img/florentine.jpg" alt="Egg B2" class="benny">
 
                         <div class="nameHeart" id="nameHeart">
@@ -219,13 +249,19 @@
                         <div class="description">
                             <p>Florentine benedict might not be everyone’s favourite, but definitely a treat for vegan or vegetarian folks out there. Also, if you’re a weight watcher or on keto diet it’s a good healthy option. It’s made out of gluten-free almond flour bun, eggs, spinach and drizzled with hollandaise sauce. Portion size of this benedict might look small, but honestly, it’s so filling that one bun is good enough for a wholesome breakfast. </p> 
                         </div>
-                        <div class="comment" id="comment">
+
+                        <div class="comment" id="comments">
                             <form>
                                 <label for="comment"></label>
-                                <textarea class="comments" placeholder="Let us know what you think!" name="comments" id="comments"></textarea>
+                                <textarea class="comments6" placeholder="Let us know what you think!" name="comments" id="comments6"></textarea>
                             </form>
-                            <button class="addComment" id="addComment"> COMMENT </button>
+                            <button onclick="commentSection(6)" class="addComment6 button" id="addComment6"> COMMENT </button>    
                         </div>
+
+                        <div class="commList">
+                            <ul class="commentList6" id="commentList6"></ul>
+                        </div>
+
                         <div class="shareThis" id="shareThis">
                             <ul>
                             <li><a href="https://www.facebook.com/login"><img src="img/facebook.svg"></a></li>
@@ -235,7 +271,7 @@
                         </div>
                     </section> 
 
-                    <section class="first">
+                    <section id="6" class="seven card">
                         <img src="img/ham_bene.jpeg" alt="Egg B2" class="benny">
 
                         <div class="nameHeart" id="nameHeart">
@@ -247,12 +283,16 @@
                             <p>Poached eggs over slice of ham and toasted English muffin, topped with yummy hollandaise sauce, who would want to say no to that?! I would eat this luscious ham eggs benedict every day and not get bored. This dish is also very easy to make, and you don’t need that much of a prep. It is a very classic benedict but if you like you could substitute the ham for the crispy bacon. It would go perfectly with a side of home cut fries and a glass of freshly squeezed orange juice.</p> 
                         </div>
 
-                        <div class="comment" id="comment">
+                        <div class="comment" id="comments">
                             <form>
                                 <label for="comment"></label>
-                                <textarea class="comments" placeholder="Let us know what you think!" name="comments" id="comments"></textarea>
+                                <textarea class="comments7" placeholder="Let us know what you think!" name="comments" id="comments7"></textarea>
                             </form>
-                            <button class="addComment" id="addComment"> COMMENT </button>
+                            <button onclick="commentSection(7)" class="addComment7 button" id="addComment7"> COMMENT </button>    
+                        </div>
+
+                        <div class="commList">
+                            <ul class="commentList7" id="commentList7"></ul>
                         </div>
                         
 
@@ -265,7 +305,7 @@
                         </div>
                     </section> 
 
-                    <section class="first">
+                    <section id="7" class="eight card">
                         <img src="img/hash_&_ham.jpg" alt="Egg B2" class="benny">
 
                         <div class="nameHeart" id="nameHeart">
@@ -278,12 +318,16 @@
                             <p>This one is my ultimate favourite eggs benedict because of the hash brown instead of english muffin. English muffin does get boring sometimes so feel free to replace it with anything you like. It has so many layers, hash brown patty, eggs, ham, cabbage, tomato, spinach, layer of spicy mayo and of course topped with famous hollandaise sauce. It’s just plain delicious. Once you take a bite you can feel all the texture in your mouth, crispy, runny, meaty! If you love potatoes, you’ll love this one. </p> 
                         </div>
 
-                        <div class="comment" id="comment">
+                        <div class="comment" id="comments">
                             <form>
                                 <label for="comment"></label>
-                                <textarea class="comments" placeholder="Let us know what you think!" name="comments" id="comments"></textarea>
+                                <textarea class="comments8" placeholder="Let us know what you think!" name="comments" id="comments8"></textarea>
                             </form>
-                            <button class="addComment" id="addComment"> COMMENT </button>
+                            <button onclick="commentSection(8)" class="addComment8 button" id="addComment8"> COMMENT </button>    
+                        </div>
+
+                        <div class="commList">
+                            <ul class="commentList8" id="commentList8"></ul>
                         </div>
                         
                         <div class="shareThis" id="shareThis">
@@ -296,7 +340,7 @@
 
                     </section> 
 
-                    <section class="first">
+                    <section id="8" class="nine card">
                         <img src="img/pulled_pork.jpg" alt="Egg B2" class="benny">
 
                         <div class="nameHeart" id="nameHeart">
@@ -309,13 +353,18 @@
                             <p>Pulled pork is such a famous barbecue dish in the Southern State, but even if you’re not from there you’ll still love this dish. It’s juicy and so tender, and not at all dry. When it’s combined with the poached egg and hollandaise sauce all the goodness comes together.  Barbecued pulled pork means summer- time, and summer means weekend brunch. Although I feel like this would not just be ideal for brunch, but also dinner. So, if you’re ever stuck with leftover pulled pork you know what to do with it!!</p> 
                         </div>
 
-                        <div class="comment" id="comment">
+                        <div class="comment" id="comments">
                             <form>
                                 <label for="comment"></label>
-                                <textarea class="comments" placeholder="Let us know what you think!" name="comments" id="comments"></textarea>
+                                <textarea class="comments9" placeholder="Let us know what you think!" name="comments" id="comments9"></textarea>
                             </form>
-                            <button class="addComment" id="addComment"> COMMENT </button>
+                            <button onclick="commentSection(9)" class="addComment9 button" id="addComment9"> COMMENT </button>    
                         </div>
+
+                        <div class="commList">
+                            <ul class="commentList9" id="commentList9"></ul>
+                        </div>
+
                         
                         <div class="shareThis" id="shareThis">
                             <ul>
@@ -327,7 +376,7 @@
 
                     </section> 
 
-                    <section class="first">
+                    <section id="9"class="ten card">
                         <img src="img/sweet_pot.jpg" alt="Egg B2" class="benny">
 
                         <div class="nameHeart" id="nameHeart">
@@ -339,12 +388,16 @@
                             <p>Look at another healthy option for eggs benedict which is made of four layers. It includes, sweet potato toast topped with Canadian bacon, poached eggs and the creamy hollandaise sauce. The size of this sweet potato eggs benedict is not that big so could also make a good healthy snack. Sweet potato has a great source of fiber, vitamins, minerals and promote gut health. This benedict is also gluten-free. Also, if you want to make it vegetarian just take out the meat and maybe add a side of your choice to make it full meal.</p> 
                         </div>
 
-                        <div class="comment" id="comment">
+                        <div class="comment" id="comments">
                             <form>
                                 <label for="comment"></label>
-                                <textarea class="comments" placeholder="Let us know what you think!" name="comments" id="comments"></textarea>
+                                <textarea class="comments10" placeholder="Let us know what you think!" name="comments" id="comments10"></textarea>
                             </form>
-                            <button class="addComment" id="addComment"> COMMENT </button>
+                            <button onclick="commentSection(10)" class="addComment10 button" id="addComment10"> COMMENT </button>    
+                        </div>
+
+                        <div class="commList">
+                            <ul class="commentList10" id="commentList10"></ul>
                         </div>
 
                         <div class="shareThis" id="shareThis">
@@ -357,7 +410,7 @@
 
                     </section> 
 
-                    <section class="first">
+                    <section id="10" class="eleven card">
                         <img src="img/waffle_bene.jpg" alt="Egg B2" class="benny">
 
                         <div class="nameHeart" id="nameHeart">
@@ -368,23 +421,54 @@
                             <p>Never have I ever had eggs benedict on waffles?? Try it! It tastes so different but in a good way. You can taste the mixture of creamy hollandaise sauce and runny yolk but also a tad bit of sweetness from the waffle.  If you’re not an English muffin person, give the waffle eggs benedict a try and I promise it’s going to be worth it.  Unlike English muffin, waffles have square dotted pockets which is perfect to hold the runny yolk and sauce. </p> 
                         </div>
 
-                        <div class="comment" id="comment">
+                        <div class="comment" id="comments">
                             <form>
                                 <label for="comment"></label>
-                                <textarea class="comments" placeholder="Let us know what you think!" name="comments" id="comments"></textarea>
+                                <textarea class="comments11" placeholder="Let us know what you think!" name="comments" id="comments11"></textarea>
                             </form>
-                            <button class="addComment" id="addComment"> COMMENT </button>
+                            <button onclick="commentSection(11)" class="addComment11 button" id="addComment11"> COMMENT </button>    
                         </div>
 
-                        <div class="shareThis" id="shareThis">
+                        <div class="commList">
+                            <ul class="commentList11" id="commentList11"></ul>
+                        </div>
+
+                        <div class="more"><a href="#bennyHistory"><i class="material-icons more" id="drop">expand_more</i></a></div>
+                        <!-- <div class="less" ><a href="#bennyHistory"><i class="material-icons less" id="noDrop">expand_less</i></a></div> -->
+
+                        <div class="shareThis last" id="shareThis">
                             <ul>
                             <li><a href="https://www.facebook.com/login"><img src="img/facebook.svg"></a></li>
                             <li><a href="https://www.instagram.com/accounts/login/?hl=en"><img src="img/instagram.svg"></a></li>
                             <li><a href="https://twitter.com/login"><img src="img/twitter.svg"></a><li>
                             </ul>
-                        </div>
-
+                        </div>   
                     </section> 
+                    <!-- <section class="bennyHistory" id="bennyHistory">
+                        <article class="fade-in hidden">
+                            <h2 class="h2"> History </h2>
+                            <div class="fampic">
+                                <img src="img/bruch.jpg" alt="Lemuel Benedict" class="lben">
+                            </div>
+                            <h1> Who was the Egg Man? </h1>
+                            <ul>
+                                <li> <h1>1860s</h1> </li>
+                                <li>Credit is given to Delmonico’s Restaurant, the very first restaurant or public dining room ever opened in the United States.  In the 1860’s, a regular patron of the restaurant, Mrs. LeGrand Benedict, finding nothing to her liking and wanting something new to eat for lunch, discussed this with Delmonico’s Chef Charles Ranhofer (1936-1899), Ranhofer came up with Eggs Benedict.  He has a recipe called Eggs a’ la Benedick (Eufa a’ la Benedick) in his cookbook called The Epicurean published in 1894:</li>
+                    
+                                <li>Eggs la Benedick – Cut some muffins in halves crosswise, toast them without allowing to brown, thn place a round of cooked ham an eighth of an inch thick and of the same diameter as the muffins one each half. Heat in a moderate oven and put a poached egg on each toast.  Cover the whole with Hollandaise sauce.  </li>      
+                                    
+                                <li> <h1>1894</h1> </li>
+                                <li> Following story appeared in the December 19,1942 issue of the weekly New Yorker Magazine  “Talk of the Town” column and is based on an interview with Lemuel Benedict the year before he died.</li>
+                                    
+                                <li>In 1894, Lemuel Benedict, a Wall Street broker, who was suffering from a hangover, ordered“some buttered toast, crisp bacon, two poached eggs, and a hooker of hollandaise sauce” at the Waldorf Hotel in New York.  The Waldorf’s legendary chef, Oscar Tschirky, was so impressed that he put the dish on his breakfast and luncheon menus after substituting Canadian bacon for crisp bacon and a toasted English muffin for toasted bread.</li>
+                                    
+                                <li><h1>1896</h1> </li>
+                                <li>Fannie Merritt Farmer’s (1857-1915) revised, edited, and reissued Mary J. Lincoln’s cookbook called The Boston Cooking-School Cook Book. In it is a recipe for Eggs la Benedict. The recipe is as follows:</li>
+                                    
+                                <li>Eggs la Benedict – Split and toast English muffins. Sautcircular pieces of cold boiled ham, place these over the halves of muffins, arrange on each a dropped egg, and pour around Hollandaise Sauce II, diluted with cream to make of such consistency to pour easily.</li>
+                            </ul>
+                        </article>   
+                    </section> -->
                 </div>
 
                 
