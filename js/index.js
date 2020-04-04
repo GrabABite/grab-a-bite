@@ -7,8 +7,9 @@ $link.getAttribute('href')
 
 
 //Part Carousel + Scrollspy
-const benedicts = document.querySelector('.ben');
-const cards = Array.from(benedicts.children);
+// const benedicts = document.querySelector('.ben');
+// const cards = Array.from(benedicts.children);
+
 const scrollSpy = document.querySelector('.scrollspy');
 const dots = Array.from(scrollSpy.children);
 
@@ -31,14 +32,26 @@ highlightDot(currentHighlightedIndex);
 const performAction = () => {
   let centerY = document.documentElement.clientHeight / 2;
 
-  for (let index = 0; index < cards.length; index++) {
-    card = cards[index];
-    // Runs 5 times, with values of step 0 through 4.
+  let dynamicCards= document.querySelector('.ben');
+  let allCards = dynamicCards.children;
+
+  for (let index = 0; index < 11; index++) {
+    card = allCards[index];
+    
     if(isCardInMiddle(card, centerY)){
         highlightDot(index);
         break;
     }
   }
+
+  // for (let index = 0; index < cards.length; index++) {
+  //   card = cards[index];
+  //   // Runs 5 times, with values of step 0 through 4.
+  //   if(isCardInMiddle(card, centerY)){
+  //       highlightDot(index);
+  //       break;
+  //   }
+  // }
 }
 
 window.addEventListener('scroll', (e) => {
