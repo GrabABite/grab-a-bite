@@ -315,6 +315,14 @@ main> section> .intro ul li {
     padding: 0.5em;
 }
 
+.expand{
+
+    position: absolute;
+    background-color:whitesmoke;
+    margin-left: -3em;
+    font-size: 1.50em;
+}
+
 /* footer */
 
 /* footer {
