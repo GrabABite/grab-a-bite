@@ -4,7 +4,7 @@ $link.addEventListener('click', event => { console.log('clicked') })
 $link.getAttribute('href')
 
 
-//Part Carousel + Scrollspy
+//Part A+B - Carousel + Scrollspy
 // const benedicts = document.querySelector('.ben');
 // const cards = Array.from(benedicts.children);
 const scrollSpy = document.querySelector('.scrollspy');
@@ -57,7 +57,7 @@ const enableScrolling = (event) => {
 let moreButton= document.querySelector('.more');
 moreButton.addEventListener('click', enableScrolling) 
 
-//Part infinite loop
+//Part C - infinite loop
 let reachLastPg = false
 
 let theBennyList = (event) => { 
@@ -78,13 +78,13 @@ let theBennyList = (event) => {
     // Add new content when we hit the bottom
     document.querySelector('#ben').innerHTML += `
     <section class="bennyHistory" id="bennyHistory">
-    <article class="fade-in">
-        <h2 class="h2"> History </h2>
-        <div class="fampic">
-            <img src="img/bruch.jpg" alt="Lemuel Benedict" class="lben">
-        </div>
-        <h1> Who was the Egg Man? </h1>
+      <article class="animated animatedfadeIn fadeIn fade-in">
         <ul>
+            <li><h2 class="h2"> History </h2></li>
+            <li><img src="img/bruch.jpg" alt="Lemuel Benedict" class="lben"></li>
+        
+            <li><h1> Who was the Egg Man? </h1></li>
+        
             <li> <h1>1860s</h1> </li>
             <li>Credit is given to Delmonico’s Restaurant, the very first restaurant or public dining room ever opened in the United States.  In the 1860’s, a regular patron of the restaurant, Mrs. LeGrand Benedict, finding nothing to her liking and wanting something new to eat for lunch, discussed this with Delmonico’s Chef Charles Ranhofer (1936-1899), Ranhofer came up with Eggs Benedict.  He has a recipe called Eggs a’ la Benedick (Eufa a’ la Benedick) in his cookbook called The Epicurean published in 1894:</li>
 
@@ -100,8 +100,8 @@ let theBennyList = (event) => {
                 
             <li>Eggs la Benedict – Split and toast English muffins. Sautcircular pieces of cold boiled ham, place these over the halves of muffins, arrange on each a dropped egg, and pour around Hollandaise Sauce II, diluted with cream to make of such consistency to pour easily.</li>
         </ul>
-    </article>   
-</section>
+      </article>   
+    </section>
       `
 
     //update the variable that's tracking our state
@@ -115,3 +115,18 @@ let theBennyList = (event) => {
 // window.addEventListener('load', theBennyList)
 // window.addEventListener('scroll', theBennyList) 
 // window.addEventListener('resize', theBennyList)
+
+// Part D - Comment Section
+  function commentSection(num) {  
+    let $addComment = document.querySelectorAll('.addComment' + num)
+    let $commentText = document.querySelectorAll('.comments'+ num)
+    let $commentList = document.querySelectorAll('.commentList'+ num)
+    let commentPost = $commentText[0].value.trim();
+        if (commentPost) {
+          var li = document.createElement('li');
+          li.appendChild(document.createTextNode(commentPost));
+          $commentList[0].appendChild(li);
+        }
+        return
+      }
+      document.getElementById("addComment"+num+"").addEventListener('click', commentSection)
