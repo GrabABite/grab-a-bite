@@ -14,7 +14,7 @@ Design a component that can guide a user though content that is split into multi
 #INSPO:
 #https://www.supremo.co.uk/ 
 
-#FINAL: we combined A & B, so a two in one scrollspy and carousel. The scroll-spy at the top of the page, to show the outline of the site and current page. The carousel has the flexibility to move anywhere using the scroll-spy.
+#FINAL: we combined A & B, so a two in one scrollspy and carousel. The scroll-spy at the top of the gallery page, to show the outline of the gallery and current page. The carousel has the flexibility to move anywhere using the scroll-spy.
 
 --------------------------------------------------------------------------------------
 
@@ -27,7 +27,7 @@ https://futurism.com/
 https://dribbble.com/shots/2969291-Dribbble-Infinity-Scroll 
 https://yalantis.com/blog/web-animation-technologies-and-tools/
 
-#FINAL: three pictures per page to indicate there's something coming up next
+#FINAL: we have a button on the last pic of the gallery that takes you to the history page, which is right after the end of the gallery. That's when the infinitely load content starts. 
 
 --------------------------------------------------------------------------------------
 
@@ -37,7 +37,7 @@ https://yalantis.com/blog/web-animation-technologies-and-tools/
 #INSPO:
 https://yalantis.com/
 
-#FINAL: viewer can comment, share and favorite images
+#FINAL: viewer can comment, share and favorite images on the gallery photos.
 
 --------------------------------------------------------------------------------------
 
