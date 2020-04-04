@@ -116,11 +116,6 @@ window.addEventListener('resize', theBennyList)
 
 
 // Part scroll down
-// let $docExtra = document.documentElement
-// let $linkExtra = document.querySelector('.expand')
-// $linkExtra.addEventListener('click', event => {
-//   $linkExtra.getElementById('.bennyHistory')
-// })
 function expandH() {
     document.getElementById('.bennyHistory').innerHTML = "";
 }
