@@ -210,7 +210,7 @@ i {
     justify-self: right;
     padding-right: 0.5em;
 }
-.comment > .addComment {
+.comment > .button {
     width: 100px;
     height: 50px;
     font-weight: bold;
@@ -221,13 +221,61 @@ i {
     list-style: none;
 }
 .commList ul li {
-    
-    width: 50%;
-    background-color: var(--bg3);
-    border-radius: 10%;
-    font-family: var(--fontBody);
-    font-size: 1.2em;
+    border: 2px solid #000;
+    box-shadow: 2px 2px 2px rgba(0,0,0, 0.25);
+    margin: 20px;
+    overflow: auto;
+    padding: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
+@keyframes fadeIn {
+    from {
+        
+        transform: translateY(50%);
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        transform: translateY(-50%);
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+}
+
+.animatedfadeIn {
+    opacity: 0;
+}
+.fadeIn {
+    transform: translateY(-50%);
+    opacity: 0;
+    animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
+    display: grid;
+    position: absolute;
+    height: 100vh;
+    padding: 3em;;
+    place-self: center;;
+    margin-left: 20%;
+    margin-right: 20%;
+    position: absolute;
+} 
 
 .shareThis {
     text-align: center;
@@ -255,22 +303,12 @@ i {
     justify-self: center;
     padding: 2em;
 } 
-.fade-in {
-    display: grid;
-    position: absolute;
-    height: 100vh;
-    padding: 3em;;
-    place-self: center;;
-    margin-left: 20%;
-    margin-right: 20%;
-    position: absolute;
-}
-.fade-in ul li {
+.fadeIn ul li {
     font-family: var(--fontBody);
     font-size: 1.2em;
     padding: 0.5em;
 }
-.fade-in p {
+.fadeIn p {
     font-size: 1.3em;
     padding: 0.5em;
 }

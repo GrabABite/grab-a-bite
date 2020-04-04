@@ -81,7 +81,7 @@ let theBennyList = (event) => {
     // Add new content when we hit the bottom
     document.querySelector('#ben').innerHTML += `
     <section class="bennyHistory" id="bennyHistory">
-      <article class="fade-in">
+      <article class="animated animatedfadeIn fadeIn">
         <ul>
           <li><img src="img/bruch.jpg" alt="Lemuel Benedict" class="lben"></li>
           <li><h1> Who was the Egg Man? </h1></li>
@@ -118,27 +118,20 @@ window.addEventListener('resize', theBennyList)
 
 
 
+// Part D Comment Section
 
+//Tried array and for each; failed miserably, it didn't work for me jk i just suck @ this:(
 
-
-// Part D
-function commentSection() {
-    let $addComment = document.querySelectorAll('.addComment')
-    let $commentText = document.querySelectorAll('.comments')
-    let $commentList = document.querySelectorAll('.commentList')
+  function commentSection(num) {  
+    let $addComment = document.querySelectorAll('.addComment' + num)
+    let $commentText = document.querySelectorAll('.comments'+ num)
+    let $commentList = document.querySelectorAll('.commentList'+ num)
     let commentPost = $commentText[0].value.trim();
-    
-
-    if(commentPost){
-      var li = document.createElement('li');
-      li.appendChild(document.createTextNode(commentPost));
-      $commentList[0].appendChild(li);
-    }
-
-
-    
-}
-
-document.getElementById(`addComment`).addEventListener('click', commentSection);
-
-
+        if (commentPost) {
+          var li = document.createElement('li');
+          li.appendChild(document.createTextNode(commentPost));
+          $commentList[0].appendChild(li);
+        }
+        return
+      }
+      document.getElementById("addComment"+num+"").addEventListener('click', commentSection)
