@@ -72,8 +72,6 @@ let theBennyList = (event) => {
   let winX = window.scrollX
   let maxY = docH - winH
   let maxX = docW - winW
-  let pctY = Math.round(winY / Math.max(maxY, 1) * 100)
-  let pctX = Math.round(winX / Math.max(maxX, 1) * 100)
 
   if (winY >= maxY) {
     // You have definitely hit the bottom
