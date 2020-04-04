@@ -157,8 +157,8 @@ i {
 }
 
 .card{
-   margin-left: auto%;
-   margin-right: auto%; 
+   margin-left: auto;
+   margin-right: auto; 
    display: grid;
    padding: 0em 14em 0em 14em;
    height: 100%R;
@@ -250,9 +250,10 @@ i {
     place-self: center;
 }
 .lben {
-    width: 80vh;
+    width: 60vh;
     justify-self: center;
-    padding: 2em;
+    padding: 0.5em;
+    border-radius: 8%;
 } 
 .fade-in {
     display: grid;
@@ -272,7 +273,13 @@ i {
     font-size: 1.3em;
     padding: 0.5em;
 }
-
+.toTheTop {
+    position: float;
+    justify-self: right;
+    padding: 1em;
+    margin: 1em;
+    cursor: pointer; 
+} 
 
 
 /* HOVERABLE MENTIONS and OTHERS;) */

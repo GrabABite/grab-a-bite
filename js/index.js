@@ -1,9 +1,15 @@
 let $doc = document.documentElement
 let $link = document.querySelector('header a')
-
+let $btn = document.querySelector('#toTop')
 
 $link.addEventListener('click', event => { console.log('clicked') })
 $link.getAttribute('href')
+$btn.addEventListener('click', event => { console.log('clicked') })
+$btn.getAttribute('href')
+
+
+
+
 
 
 //Part Carousel + Scrollspy
@@ -87,7 +93,7 @@ let theBennyList = (event) => {
                 
         <li>Eggs la Benedict – Split and toast English muffins. Sautcircular pieces of cold boiled ham, place these over the halves of muffins, arrange on each a dropped egg, and pour around Hollandaise Sauce II, diluted with cream to make of such consistency to pour easily.</li>
       </ul>
-    </article>   
+    </article>
 </section>
       `
 
@@ -109,6 +115,9 @@ window.addEventListener('resize', theBennyList)
 
 
 // Part D
+
+
+//comment
 function commentSection() {
     let $addComment = document.querySelectorAll('.addComment')
     let $commentText = document.querySelectorAll('.comments')
