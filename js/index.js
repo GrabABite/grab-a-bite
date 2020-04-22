@@ -1,6 +1,7 @@
 let $doc = document.documentElement
 let $link = document.querySelector('header a')
-$link.addEventListener('click', event => { console.log('clicked') })
+$link.addEventListener('click', event => { 
+console.log('clicked') })
 $link.getAttribute('href')
 
 
@@ -47,7 +48,8 @@ window.addEventListener('scroll', (e) => {
 });
 
 //HEART BUTTON BEYBE
-//tried doing removing class and adding class, then stumbled upon a research about toggleClass
+//tried doing removing class and adding class but it wont apply to all of them, then stumbled upon a research about toggleClass
+//https://www.w3schools.com/jquery/html_toggleclass.asp
 $(".far").click(function() {
   $(this).toggleClass("fas fa-heart far fa-heart");
 });
