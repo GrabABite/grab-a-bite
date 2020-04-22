@@ -48,8 +48,10 @@ window.addEventListener('scroll', (e) => {
 });
 
 //HEART BUTTON BEYBE
-//tried doing removing class and adding class but it wont apply to all of them, then stumbled upon a research about toggleClass
+//tried doing removing class and adding class but it would only work for the first heart, then stumbled upon a research about toggleClass
+//https://ultimatecourses.com/blog/javascript-hasclass-addclass-removeclass-toggleclass
 //https://www.w3schools.com/jquery/html_toggleclass.asp
+
 $(".far").click(function() {
   $(this).toggleClass("fas fa-heart far fa-heart");
 });
