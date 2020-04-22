@@ -1,6 +1,7 @@
 let $doc = document.documentElement
 let $link = document.querySelector('header a')
-$link.addEventListener('click', event => { console.log('clicked') })
+$link.addEventListener('click', event => { 
+console.log('clicked') })
 $link.getAttribute('href')
 
 
@@ -46,7 +47,16 @@ window.addEventListener('scroll', (e) => {
   performAction();
 });
 
-//more button
+//HEART BUTTON BEYBE
+//I tried removing and adding class but it would only work for the first heart, then stumbled upon a research about toggleClass
+//https://ultimatecourses.com/blog/javascript-hasclass-addclass-removeclass-toggleclass
+//https://www.w3schools.com/jquery/html_toggleclass.asp
+
+$(".far").click(function() {
+  $(this).toggleClass("fas fa-heart far fa-heart");
+});
+
+//MORE BUTTON
 const enableScrolling = (event) => {
   theBennyList(event);
   window.addEventListener('load', theBennyList);
@@ -56,6 +66,7 @@ const enableScrolling = (event) => {
 
 let moreButton= document.querySelector('.more');
 moreButton.addEventListener('click', enableScrolling) 
+
 
 //Part C - infinite loop
 let reachLastPg = false
@@ -112,9 +123,6 @@ let theBennyList = (event) => {
 
 
 
-// window.addEventListener('load', theBennyList)
-// window.addEventListener('scroll', theBennyList) 
-// window.addEventListener('resize', theBennyList)
 
 // Part D - Comment Section
   function commentSection(num) {  
@@ -130,3 +138,6 @@ let theBennyList = (event) => {
         return
       }
       document.getElementById("addComment"+num+"").addEventListener('click', commentSection)
+
+
+//heart button is before the infinite loop
