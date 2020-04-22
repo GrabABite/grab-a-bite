@@ -395,6 +395,11 @@ a:hover {
     color: var(--bg3);
 }
 
-/* .shareThis ul li> a img:hover {
-    transform: rotate(360deg);
-} */
+/* heart */
+.far {
+    cursor: pointer;
+}
+.fas {
+    color: rgb(248, 86, 86);
+    cursor: pointer;
+}

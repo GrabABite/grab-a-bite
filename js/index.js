@@ -46,7 +46,13 @@ window.addEventListener('scroll', (e) => {
   performAction();
 });
 
-//more button
+//HEART BUTTON BEYBE
+//tried doing removing class and adding class, then stumbled upon a research about toggleClass
+$(".far").click(function() {
+  $(this).toggleClass("fas fa-heart far fa-heart");
+});
+
+//MORE BUTTON
 const enableScrolling = (event) => {
   theBennyList(event);
   window.addEventListener('load', theBennyList);
@@ -56,6 +62,7 @@ const enableScrolling = (event) => {
 
 let moreButton= document.querySelector('.more');
 moreButton.addEventListener('click', enableScrolling) 
+
 
 //Part C - infinite loop
 let reachLastPg = false
@@ -112,9 +119,6 @@ let theBennyList = (event) => {
 
 
 
-// window.addEventListener('load', theBennyList)
-// window.addEventListener('scroll', theBennyList) 
-// window.addEventListener('resize', theBennyList)
 
 // Part D - Comment Section
   function commentSection(num) {  
@@ -130,3 +134,6 @@ let theBennyList = (event) => {
         return
       }
       document.getElementById("addComment"+num+"").addEventListener('click', commentSection)
+
+
+//heart button is before the infinite loop
