@@ -121,9 +121,6 @@ let theBennyList = (event) => {
 
 }
 
-
-
-
 // Part D - Comment Section
   function commentSection(num) {  
     let $addComment = document.querySelectorAll('.addComment' + num)

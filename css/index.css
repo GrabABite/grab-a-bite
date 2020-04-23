@@ -19,7 +19,7 @@ body {
     color: var(--txt);
 }
 img {
-    width: 95%;
+    width: 100%;
 }
 textarea {
     width: 350px;
@@ -86,36 +86,6 @@ i {
 }
 
 
-/* flippers */
-/*.bennies {
-    perspective: 800px;
-}
-.bennies:hover .flipper {
-    transform: rotateY(180deg);
-}
-.intro {
-    z-index: 3em;
-}
-.intro .benny_pic {
-    position: absolute;
-    backface-visibility: hidden;
-}
- .vertical.bennies {
-	position: relative;
-}
-
-	.vertical .benny_pic {
-		transform: rotateX(180deg);
-	}
-
-	.vertical.bennies .flipper {
-		transform-origin: 100% 213.5px; /* half of height 
-	}
-
-	.vertical.bennies:hover .flipper {
-		transform: rotateX(-180deg);
-	} */
-
 /* bennies */
 .bennies {
     background-color: var(--bg);
@@ -127,6 +97,11 @@ i {
 .bennies p {
     font-family: var(--fontBody);
     font-size: 1.5em;
+}
+.flipper {
+    padding: 0.2em;
+    max-width: 80em;
+    margin: auto;
 }
 .bennies> .flipper> .intro {
     position: relative;
@@ -147,14 +122,6 @@ i {
     display: block;
     height: 100vh;
 }
-
-/* SCROLLSPY */
-
-
-
-
-
-
 
 /* the foods/ ourBennies section */
 *{
@@ -197,50 +164,29 @@ i {
 .current{
     background-color:#F5CA60;
 }
-
+.ben {
+    max-width: 60em;
+    margin: auto;
+}
 .benny_pic{
     background-color: var(--bg2);
-    /* text-align: center; */
-    display: grid;
-    grid-template-columns: 1fr;
-    
-    /* margin: 5em; */
-    /* grid-template-areas:
-    "a b 0"; */
 }
-
-
-.benny {
-    /* width: 100%; */
-    /* border-radius: 1.5em; */
-    /* place-self: center; */
-    /* height: 100%;
-    object-fit: cover; */
-    padding: 0em 10.5em 0em 10.5em;
-}
-
-.card{
-   /* width: 100%;
-   height: 100vh; */
+.card {
    margin-left: auto;
    margin-right: auto; 
    display: block;
-   /* display: flex;
-   justify-content: center; */
-   padding: 2em 13em 2em 13em;
-   
+   max-height: 100vh;
+   padding: 2em; 
 }
-
-
-
 .nameHeart {
     display: grid;
     grid-template-columns: 1fr 0.5fr ;
-    padding-left: 10em;
+    padding: 0.7em;
 } 
 .description p{
     font-family: var(--fontBody);
-    font-size: 1em;
+    font-size: 1.5em;
+    line-height: 1.3em;
     padding-top: 1em;
     text-align: center;
 }
@@ -250,7 +196,7 @@ i {
     padding-top: 2em;
     text-align: center;
     display: grid;
-    grid-template-columns: 1.3fr 0.7fr;
+    grid-template-columns: 1.5fr 0.5fr;
 }
 .comment > form {
     justify-self: right;
@@ -339,9 +285,6 @@ i {
     padding: 0.5em;
 }
 
-/* .bennyHistory:target {
-    display: block;
-} */
 
 .more{
     cursor: pointer;
@@ -398,8 +341,12 @@ a:hover {
 /* heart */
 .far {
     cursor: pointer;
+    font-size: 1.75em;
+    justify-self: end;
 }
 .fas {
     color: rgb(248, 86, 86);
     cursor: pointer;
+    font-size: 1.75em;
+    justify-self: end;
 }
