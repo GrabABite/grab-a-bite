@@ -43,11 +43,6 @@ i {
     color: var(--txt);
     float: right;
 }
-
-.material-icons{
-   margin-right: 9em;
-}
-
 .h2{
     font-family: var(--fontHead);
     font-size: 2em;
@@ -65,9 +60,6 @@ i {
     display: block;
     height: 100vh;
 }
-.startPg ul {
-    transition: transform 0.3s;
-}
 .startPg> ul li {
     font-family: var(--fontBody);
     text-align: center;
@@ -76,9 +68,9 @@ i {
 }
 .startPg> ul li:first-child {
     font-family: var(--fontHead);
-    font-size: 6em;
+    font-size: 5em;
     text-align: center;
-    padding-top:4em;
+    padding-top:3em;
 }
 .startPg> ul li:nth-child(3) {
     position: absolute;
@@ -157,7 +149,6 @@ i {
     margin: 2px;
     /* transition: background-color 0.6s ease; */
 }
-
 .dot:hover{
     background-color: lightgrey;
 }
