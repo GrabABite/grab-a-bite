@@ -33,6 +33,24 @@ const performAction = () => {
   let dynamicCards= document.querySelector('.ben');
   let allCards = dynamicCards.children;
 
+  //back to top
+  let fisrtBennyHistory = document.querySelector('#bennyHistory');
+  
+  if(fisrtBennyHistory != null) {
+    let isBennyHistoryInCentre = isCardInMiddle(fisrtBennyHistory, centerY);
+    
+    if (isBennyHistoryInCentre) {
+      let allArrowButtons = document.querySelectorAll('#btButt');
+      allArrowButtons.forEach(element => element.style.visibility = "visible");
+    } 
+  }
+
+  let lastCard = allCards[10];
+  if (isCardInMiddle(lastCard, centerY) && fisrtBennyHistory != null) {
+    let allArrowButtons = document.querySelectorAll('#btButt');
+    allArrowButtons.forEach(element => element.style.visibility = "hidden");
+  }
+
   for (let index = 0; index < 11; index++) {
     card = allCards[index];
     
@@ -85,10 +103,11 @@ let theBennyList = (event) => {
 
   if (winY >= maxY) {
     // You have definitely hit the bottom
-
+    
     // Add new content when we hit the bottom
     document.querySelector('#ben').innerHTML += `
     <section class="bennyHistory" id="bennyHistory">
+      <div class="bt"><a href="#top"><span id="btButt" class="material-icons back-top">arrow_upward</span></a></div>
       <article class="animated animatedfadeIn fadeIn fade-in">
         <ul>
             <li><h2 class="h2"> History </h2></li>
@@ -111,7 +130,7 @@ let theBennyList = (event) => {
                 
             <li>Eggs la Benedict – Split and toast English muffins. Sautcircular pieces of cold boiled ham, place these over the halves of muffins, arrange on each a dropped egg, and pour around Hollandaise Sauce II, diluted with cream to make of such consistency to pour easily.</li>
         </ul>
-      </article>   
+      </article>  
     </section>
       `
 
