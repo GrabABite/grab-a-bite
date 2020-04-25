@@ -60,7 +60,7 @@ let moreButton= document.querySelector('.more');
 moreButton.addEventListener('click', enableScrolling) 
 
 //HEART BUTTON BEYBE
-//I tried removing and adding class but it would only work for the first heart, then stumbled upon a research about toggleClass
+//I tried removing and adding class but it would only work for the first heart, then stumbled upon a research about toggleClass, tried it and it worked on all of them
 //https://ultimatecourses.com/blog/javascript-hasclass-addclass-removeclass-toggleclass
 //https://www.w3schools.com/jquery/html_toggleclass.asp
 
