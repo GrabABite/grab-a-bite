@@ -43,6 +43,27 @@ i {
     float: right;
 }
 
+.back-top{
+    
+    z-index: 1000;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    color: black;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color:whitesmoke;
+    font-size: 2em;
+}
+
+.back-top:hover{
+    color: #F5CA60;
+    background-color: white;
+}
+
+
+
+
 .material-icons{
    margin-right: 9em;
 }
@@ -344,11 +365,18 @@ i {
 } */
 
 .more{
+    color: black;
+    border-radius: 50%;
     cursor: pointer;
     position: absolute;
     background-color:whitesmoke;
     margin-left: -3em;
     font-size: 1.50em;
+    
+}
+.more:hover{
+    color: #F5CA60;
+    background-color: white;
 }
 
 @-webkit-keyframes fadeIn {
