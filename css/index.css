@@ -19,7 +19,7 @@ body {
     color: var(--txt);
 }
 img {
-    max-width: 100%;
+    width: 100%;
 }
 textarea {
     width: 175px;
