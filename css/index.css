@@ -19,7 +19,7 @@ body {
     color: var(--txt);
 }
 img {
-    width: 100%;
+    max-width: 100%;
 }
 textarea {
     width: 175px;
@@ -165,7 +165,6 @@ i {
    margin-left: auto;
    margin-right: auto; 
    display: block;
-   max-height: 100vh;
    padding: 2em; 
 }
 .nameHeart {
@@ -357,8 +356,6 @@ a:hover {
     textarea {
         width: 350px;
         height: 80px;
-        font-family: var(--fontBody);
         font-size: 1em;
-        background-color: var(--bg3);
     }
 }
