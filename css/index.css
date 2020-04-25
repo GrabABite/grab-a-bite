@@ -43,6 +43,32 @@ i {
     color: var(--txt);
     float: right;
 }
+
+.back-top{
+    
+    z-index: 1000;
+    position: fixed;
+    bottom: 20px;
+    right: -4.5em;
+    color: black;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color:whitesmoke;
+    font-size: 2em;
+}
+
+.back-top:hover{
+    color: #F5CA60;
+    background-color: white;
+}
+
+
+
+
+.material-icons{
+   margin-right: 9em;
+}
+
 .h2{
     font-family: var(--fontHead);
     font-size: 2em;
@@ -276,11 +302,18 @@ i {
     padding: 0.5em;
 }
 .more{
+    color: black;
+    border-radius: 50%;
     cursor: pointer;
     position: absolute;
     background-color:whitesmoke;
     margin-left: -3em;
     font-size: 1.50em;
+    
+}
+.more:hover{
+    color: #F5CA60;
+    background-color: white;
 }
 
 @-webkit-keyframes fadeIn {
