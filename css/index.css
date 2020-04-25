@@ -22,18 +22,18 @@ img {
     width: 100%;
 }
 textarea {
-    width: 350px;
-    height: 80px;
+    width: 175px;
+    height: 40px;
     font-family: var(--fontBody);
-    font-size: 1em;
+    font-size: 0.75em;
     background-color: var(--bg3);
 }
-button {
+/* button {
     font-weight: bold;
     padding:0.7em;
     border-radius: 10%;
     font-family: var(--fontBody);
-}
+} */
 input {
     font-family: var(--fontBody);
 }
@@ -63,14 +63,14 @@ i {
 .startPg> ul li {
     font-family: var(--fontBody);
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1em;
     padding: 0.3em;
 }
 .startPg> ul li:first-child {
     font-family: var(--fontHead);
-    font-size: 5em;
+    font-size: 2em;
     text-align: center;
-    padding-top:3em;
+    padding-top:3.5em;
 }
 .startPg> ul li:nth-child(3) {
     position: absolute;
@@ -85,11 +85,11 @@ i {
 }
 .bennies h1{
     font-family: var(--fontHead);
-    font-size: 2em;
+    font-size: 1.5em;
 }
 .bennies p {
     font-family: var(--fontBody);
-    font-size: 1.5em;
+    font-size: 1em;
 }
 .flipper {
     padding: 0.2em;
@@ -110,8 +110,6 @@ i {
 }
 .intro {
     text-align: center;
-    padding-top: 0px;
-    margin-top: 0px;
     display: block;
     height: 100vh;
 }
@@ -175,9 +173,12 @@ i {
     grid-template-columns: 1fr 0.5fr ;
     padding: 0.7em;
 } 
+.nameHeart h1 {
+    font-size: 1.3em;
+}
 .description p{
     font-family: var(--fontBody);
-    font-size: 1.5em;
+    font-size: 1em;
     line-height: 1.3em;
     padding-top: 1em;
     text-align: center;
@@ -205,9 +206,10 @@ i {
     padding-right: 0.25em;
 }
 .comment > .button {
+    font-size: 0.75em;
     margin-top: 1.6em;
-    width: 80px;
-    height: 40px;
+    width: 60px;
+    height: 30px;
     font-weight: bold;
     border-radius: 10%;
     font-family: var(--fontBody);
@@ -322,4 +324,39 @@ a:link {
 a:hover {
     text-decoration: underline;
     color: var(--bg3);
+}
+
+@media screen and (min-width: 425px) {
+    /* startpg */
+    .startPg> ul li {
+        font-size: 1.5em;
+    }
+    .startPg> ul li:first-child {
+        font-size: 5em;
+        padding-top:3em;
+    }
+    /* flipper intro */
+    .bennies h1{
+        font-size: 2em;
+    }
+    .bennies p {
+        font-size: 1.5em;
+    }
+    /* thy foods */
+    .description p{
+        font-size: 1.5em;
+    }
+    .comment > .button {
+        width: 80px;
+        height: 40px;
+        font-size: 1em;
+    }
+    /* comment section */
+    textarea {
+        width: 350px;
+        height: 80px;
+        font-family: var(--fontBody);
+        font-size: 1em;
+        background-color: var(--bg3);
+    }
 }
