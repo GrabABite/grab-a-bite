@@ -326,7 +326,9 @@ a:hover {
     color: var(--bg3);
 }
 
-@media screen and (min-width: 425px) {
+
+/* Iam breaking for 425 because that is when the layout starts to change. If I put in 320 it looks funky */
+@media screen and (min-width: 425px)  {
     /* startpg */
     .startPg> ul li {
         font-size: 1.5em;
