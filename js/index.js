@@ -65,6 +65,14 @@ window.addEventListener('scroll', (e) => {
   performAction();
 });
 
+//HEART BUTTON BEYBE
+//I tried removing and adding class but it would only work for the first heart, then stumbled upon a research about toggleClass, tried it and it worked on all of them
+//https://ultimatecourses.com/blog/javascript-hasclass-addclass-removeclass-toggleclass
+//https://www.w3schools.com/jquery/html_toggleclass.asp
+
+$(".far").click(function() {
+  $(this).toggleClass("fas fa-heart far fa-heart");
+});
 
 //MORE BUTTON
 const enableScrolling = (event) => {
@@ -77,14 +85,7 @@ const enableScrolling = (event) => {
 let moreButton= document.querySelector('.more');
 moreButton.addEventListener('click', enableScrolling) 
 
-//HEART BUTTON BEYBE
-//I tried removing and adding class but it would only work for the first heart, then stumbled upon a research about toggleClass, tried it and it worked on all of them
-//https://ultimatecourses.com/blog/javascript-hasclass-addclass-removeclass-toggleclass
-//https://www.w3schools.com/jquery/html_toggleclass.asp
 
-$(".far").click(function() {
-  $(this).toggleClass("fas fa-heart far fa-heart");
-});
 
 //Part C - infinite loop
 let reachLastPg = false
@@ -156,4 +157,4 @@ let theBennyList = (event) => {
       document.getElementById("addComment"+num+"").addEventListener('click', commentSection)
 
 
-//heart button is before the infinite loop
+//heart button is before the more button

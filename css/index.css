@@ -37,35 +37,24 @@ textarea {
 input {
     font-family: var(--fontBody);
 }
-
 i {
-    /* font-size: 10px; */
+    font-size: 10px;
     color: var(--txt);
-    float: right;
+    /* float: right; */
 }
-
+#drop:hover {
+    color: var(--bg3);
+}
 .back-top{
-    
     z-index: 1000;
     position: fixed;
     bottom: 20px;
-    right: -4.5em;
+    /* right: -4.5em; */
     color: black;
     border-radius: 50%;
     cursor: pointer;
     background-color:whitesmoke;
     font-size: 2em;
-}
-
-.back-top:hover{
-    color: #F5CA60;
-    background-color: white;
-}
-
-
-
-.material-icons{
-   margin-right: 9em;
 }
 
 .h2{
@@ -74,8 +63,6 @@ i {
     text-align: center;
     padding: 1em;
 }
-
-
 
 /* landing pg */
 .startPg {
@@ -198,7 +185,8 @@ i {
     padding: 0.7em;
 } 
 .nameHeart h1 {
-    font-size: 1.3em;
+    font-size: 1em;
+    align-self: center;
 }
 .description p{
     font-family: var(--fontBody);
@@ -210,14 +198,14 @@ i {
 /* heart */
 .far {
     cursor: pointer;
-    font-size: 1.75em;
-    justify-self: end;
+    font-size: 1.5em;
+    place-self: center end;
 }
 .fas {
     color: rgb(248, 86, 86);
     cursor: pointer;
-    font-size: 1.75em;
-    justify-self: end;
+    font-size: 1.5em;
+    place-self: center end;
 }
 
 /* comments and share section */
@@ -310,10 +298,6 @@ i {
     font-size: 1.50em;
     
 }
-.more:hover{
-    color: #F5CA60;
-    background-color: white;
-}
 
 @-webkit-keyframes fadeIn {
     from {
@@ -356,7 +340,18 @@ a:hover {
     text-decoration: underline;
     color: var(--bg3);
 }
-
+.back-top:hover{
+    color: #F5CA60;
+    background-color: white;
+}
+.more:hover{
+    color: #F5CA60;
+    background-color: white;
+}
+.comment > .button:hover {
+    color: #F5CA60;
+    background-color: white;
+}
 
 /* Iam breaking for 425 because that is when the layout starts to change. If I put in 320 it looks funky */
 @media screen and (min-width: 425px)  {
@@ -376,8 +371,17 @@ a:hover {
         font-size: 1.5em;
     }
     /* thy foods */
+    .nameHeart h1 {
+        font-size: 1.75em;
+    }
     .description p{
         font-size: 1.5em;
+    }
+    .far {
+        font-size: 1.75em;
+    }
+    .fas {
+        font-size: 1.75em;
     }
     .comment > .button {
         width: 80px;
